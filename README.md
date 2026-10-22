@@ -14,7 +14,7 @@ Baseado no core de PS4 de [HayatoG](https://github.com/HayatoG/iss_pc) (GPL-2.0-
 ## Usar / Use
 - **Pacote para jogadores:** `Lost Paradise.exe` (launcher) — veja `port/packaging/README-player-lostparadise.md`.
 - **Gerar o pacote (Windows, shell MSYS2 CLANG64):** `bash packaging/windows/package-lostparadise.sh` dentro de `port/`.
-- **Rodar do código-fonte:** `port/docs/lost-paradise/README.md` (compilar, preparar, executar).
+- **Compilar, rodar e empacotar:** [`docs/COMPILAR.md`](docs/COMPILAR.md) (também lista as referências usadas no recomp).
 - **Linux:** `./lostparadise_launcher.sh` ou `TLG_GAME_DIR=... ./run_lostparadise.sh` (não testado).
 
 Menu do jogo: `Insert` ou `R3+L2`. `Esc` solta o mouse.

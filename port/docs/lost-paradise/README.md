@@ -3,24 +3,16 @@
 Port nativo do **Lost Paradise** (PS4, CUSA12781, v1.09) sobre o core do `HayatoG/iss_pc`
 (GPL-2.0-or-later). Os arquivos do jogo **não** fazem parte do repositório: use o seu próprio dump.
 
-## Estado
+## Estado (2026-10-22)
 
-- Imports do eboot: 372 distintos / 31 bibliotecas (`eboot_imports_1.09.json`, `imports_cruzamento_1.09.csv`).
-- `prepare.py` e `link_modules.py` (com `libc.prx` e `libSceFios2.prx` do jogo) rodam no dump 1.09.
-- Verificação oficial (`tlg-probe --check-imports`, com GPU registrada, Windows, RTX 3060): **3 faltando**, todos de
-  módulos `.prx` (`NhpspxdjEKU`, `jh+8XiK4LeE`, `hHrGoGoNf+s`).
-- `src/runtime_hokuto.c`: stubs offline, `sceZlib*` (inflate próprio), `GetCpumode`, `ImeDialogGetPanelSize`.
-  `src/runtime_memory.c`: `sceKernelMemoryPool*`. Contratos lidos dos chamadores no eboot
-  (`chamadores_imports_restantes.json`); o do `Batch` e o tamanho do painel IME precisam de confirmação em execução real.
-- **Primeiro boot (2026-10-22, 40 s, com GPU):** o jogo inicializa, abre 240 arquivos de `data/`, cria as threads do
-  motor (CRI, pxd), abre áudio (WASAPI, 74 mil buffers), mostra o diálogo de save/mensagem do sistema e envia
-  3585+ lotes de draws à GPU. Só com `--cpu-only` ele para em `sceVideoOutOpen`, como esperado.
-- Erros vistos: `image view type Color2D is incompatible with image type Color1D` (testar `TLG_BP09=1`/`TLG_BLOCK1D=1`);
-  sem perfil de patches para CUSA12781; `iced_x86` não instalado (reescrita ISA indisponível, só importa em CPU sem MOVBE/BMI1/LZCNT).
-- **Jogável até o combate (2026-10-22):** o usuário passou da abertura, entrou numa partida e chegou ao combate; saiu por conta própria.
-  Defeito visto: blocos em xadrez na manga/ombro do Kenshiro na abertura (suspeita: texturas 1D, `TLG_BP09=1`/`TLG_BLOCK1D=1`).
-- Ainda não verificado: FPS, controle, vídeos longos, save real, estabilidade em sessões longas e o comando exato usado (ver abaixo);
-  o que aparece na janela, entrada de pad, vídeos (CRI/Mana), save real, estabilidade em sessões longas.
+- **Jogável no Windows com GPU Vulkan:** abertura, menus, tutorial e combate; áudio, gráficos e controle funcionam.
+- Imports do eboot: 372 distintos / 31 bibliotecas; verificação oficial: 3 faltando, todos de módulos `.prx`.
+- `src/runtime_hokuto.c` (stubs, `sceZlib*`, `GetCpumode`, IME) e `sceKernelMemoryPool*` em `src/runtime_memory.c`.
+- Launcher Tk (`launcher/lostparadise_launcher.py`) e pacote Windows (`packaging/windows/package-lostparadise.sh`);
+  resolução de saída até 4K por upscale FSR 1 (a resolução interna fica em 1080p: não há patch do jogo).
+- **Pendências:** blocos em xadrez na abertura (testar `TLG_BP09=1`/`TLG_BLOCK1D=1`); engasgo inicial (compilação de shaders);
+  confirmar contratos de `sceZlibGetResult`, `sceKernelMemoryPoolBatch` e `sceImeDialogGetPanelSize`; save real, vídeos longos e
+  sessões longas; sem perfil de patches (CUSA12781); `iced_x86` opcional. Veja `docs/COMPILAR.md` na raiz.
 
 ## Compilar no Windows (MSYS2 CLANG64)
 
@@ -80,11 +72,3 @@ python run.py
 ```
 
 Variáveis para o defeito das texturas 1D: `TLG_BP09=1` (toda textura 1D vira 2D) ou `TLG_BLOCK1D=1`.
-
-## Pendências
-
-- Rodar a verificação oficial e o primeiro boot (`--cpu-only`, depois GPU).
-- Confirmar contratos: `sceZlibGetResult` (ordem de `length`/`status`), `sceKernelMemoryPoolBatch` (operações), `sceImeDialogGetPanelSize`.
-- Ver se o dump 1.09 precisa de `playgo.pgm` / `sce_discmap_patch.plt`.
-- Descobrir quem carrega os módulos `libSceFace`, `libSceHand`, `libSceSmart`, `libSceS3DConversion`.
-- Perfil de patches (`scripts/patches.py` não tem perfil para CUSA12781).
