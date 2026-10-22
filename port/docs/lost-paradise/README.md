@@ -7,12 +7,17 @@ Port nativo do **Lost Paradise** (PS4, CUSA12781, v1.09) sobre o core do `Hayato
 
 - Imports do eboot: 372 distintos / 31 bibliotecas (`eboot_imports_1.09.json`, `imports_cruzamento_1.09.csv`).
 - `prepare.py` e `link_modules.py` (com `libc.prx` e `libSceFios2.prx` do jogo) rodam no dump 1.09.
-- Verificação reduzida de imports (só o runtime, sem GPU real): **3 faltando**, todos de módulos `.prx`
-  (`NhpspxdjEKU`, `jh+8XiK4LeE`, `hHrGoGoNf+s`). A verificação oficial (`--check-imports`) **ainda não foi rodada**.
+- Verificação oficial (`tlg-probe --check-imports`, com GPU registrada, Windows, RTX 3060): **3 faltando**, todos de
+  módulos `.prx` (`NhpspxdjEKU`, `jh+8XiK4LeE`, `hHrGoGoNf+s`).
 - `src/runtime_hokuto.c`: stubs offline, `sceZlib*` (inflate próprio), `GetCpumode`, `ImeDialogGetPanelSize`.
   `src/runtime_memory.c`: `sceKernelMemoryPool*`. Contratos lidos dos chamadores no eboot
   (`chamadores_imports_restantes.json`); o do `Batch` e o tamanho do painel IME precisam de confirmação em execução real.
-- Nunca foi feito um boot do jogo. GPU, áudio, pad e save ainda não foram testados.
+- **Primeiro boot (2026-10-22, 40 s, com GPU):** o jogo inicializa, abre 240 arquivos de `data/`, cria as threads do
+  motor (CRI, pxd), abre áudio (WASAPI, 74 mil buffers), mostra o diálogo de save/mensagem do sistema e envia
+  3585+ lotes de draws à GPU. Só com `--cpu-only` ele para em `sceVideoOutOpen`, como esperado.
+- Erros vistos: `image view type Color2D is incompatible with image type Color1D` (testar `TLG_BP09=1`/`TLG_BLOCK1D=1`);
+  sem perfil de patches para CUSA12781; `iced_x86` não instalado (reescrita ISA indisponível, só importa em CPU sem MOVBE/BMI1/LZCNT).
+- Ainda não verificado: o que aparece na janela, entrada de pad, vídeos (CRI/Mana), save real, estabilidade em sessões longas.
 
 ## Compilar no Windows (MSYS2 CLANG64)
 
