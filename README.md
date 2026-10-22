@@ -21,3 +21,9 @@ Menu do jogo: `Insert` ou `R3+L2`. `Esc` solta o mouse.
 
 ## Licença / License
 GPL-2.0-or-later (ver `port/LICENSE`). Sem arquivos do jogo, do firmware ou de arte oficial.
+
+## Contribuidores / Contributors
+- **carachapadu** — dono do projeto: dump do jogo, testes no Windows, direção e releases.
+- **Claude** (Anthropic, Claude Sonnet 5.5, via Claude Code) — análise do eboot e dos imports, `runtime_hokuto.c`, `sceKernelMemoryPool*`,
+  launcher, empacotamento, resolução de saída e documentação.
+- **HayatoG** e os autores do shadPS4 — o core de PS4 e a tradução de GPU sobre os quais o port é construído (ver `docs/COMPILAR.md`).
