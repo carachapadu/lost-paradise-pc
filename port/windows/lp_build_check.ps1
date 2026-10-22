@@ -60,6 +60,7 @@ echo '== fim'
 "@
 $tmp = Join-Path $env:TEMP 'lp_build_check.sh'
 [IO.File]::WriteAllText($tmp, ($script -replace "`r`n", "`n"))
+$ErrorActionPreference = 'Continue'   # warnings of pacman/git go to stderr and must not stop the script
 $env:MSYSTEM = 'CLANG64'; $env:CHERE_INVOKING = '1'
 & "$Msys\usr\bin\bash.exe" -lc "bash '$(Msys-Path $tmp)'" 2>&1 | Tee-Object -FilePath $Log -Append
 Say "Codigo de saida: $LASTEXITCODE. Log: $Log"
