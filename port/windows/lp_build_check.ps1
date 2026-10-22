@@ -12,9 +12,9 @@ param(
     [string]$Msys = 'C:\msys64'
 )
 $ErrorActionPreference = 'Stop'
-function Say($m) { Write-Host $m; try { Add-Content -Path $Log -Value $m } catch { } }
+function Say($m) { Write-Host $m; try { Add-Content -Path $Log -Encoding UTF8 -Value $m } catch { } }
 New-Item -ItemType Directory -Force -Path (Split-Path $Log) | Out-Null
-Set-Content -Path $Log -Value "Lost Paradise build/check $(Get-Date -Format s)"
+Set-Content -Path $Log -Encoding UTF8 -Value "Lost Paradise build/check $(Get-Date -Format s)"
 
 if (-not (Test-Path "$Repo\port\build.sh")) { Say "Repositorio nao encontrado em $Repo (git clone primeiro)."; exit 1 }
 foreach ($f in 'eboot.elf', 'sce_sys\param.sfo', 'sce_module') {
@@ -47,6 +47,9 @@ pacman -S --needed --noconfirm git patch \
   mingw-w64-clang-x86_64-{spirv-tools,spirv-headers,spirv-cross}
 git config --global --add safe.directory '*'
 cd '$repoM/port'
+# Git for Windows may have checked the repository out with CRLF; patches and shell scripts need LF.
+git config core.autocrlf false
+find . -path ./gpu/third_party -prune -o \( -name '*.patch' -o -name '*.sh' \) -type f -print0 | xargs -0 sed -i 's/\r$//'
 git submodule update --init --recursive
 echo '== build'
 TLG_LTO=OFF bash build.sh
@@ -62,5 +65,5 @@ $tmp = Join-Path $env:TEMP 'lp_build_check.sh'
 [IO.File]::WriteAllText($tmp, ($script -replace "`r`n", "`n"))
 $ErrorActionPreference = 'Continue'   # warnings of pacman/git go to stderr and must not stop the script
 $env:MSYSTEM = 'CLANG64'; $env:CHERE_INVOKING = '1'
-& "$Msys\usr\bin\bash.exe" -lc "bash '$(Msys-Path $tmp)'" 2>&1 | Tee-Object -FilePath $Log -Append
+& "$Msys\usr\bin\bash.exe" -lc "bash '$(Msys-Path $tmp)'" 2>&1 | ForEach-Object { $l = "$_"; Write-Host $l; try { Add-Content -Path $Log -Encoding UTF8 -Value $l } catch { } }
 Say "Codigo de saida: $LASTEXITCODE. Log: $Log"
