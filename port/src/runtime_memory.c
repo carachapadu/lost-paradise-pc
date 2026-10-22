@@ -701,12 +701,12 @@ static ABI int32_t batch_map(BatchEntry *entries, int count, int *processed) {
  *   Commit(address, length, type, prot, flags)               Decommit(address, length, flags)
  *   Batch(entries, count, int *processed, flags): 32-byte entries {u32 op; u32 pad; u64 address; u64 length;
  *   u16 ...}, op 1 decommit, op 2 commit. */
-static uint64_t pool_expanded, pool_cursor;
+static uint64_t pool_cursor;
 static ABI int32_t pool_expand(void *start, void *end, uint64_t length, uint64_t alignment, uint64_t *physical) {
     (void)start; (void)end;
     if (!length || length%PAGE || !physical || (alignment && !valid_alignment(alignment))) return INVALID;
     write_lock();
-    *physical=pool_cursor; pool_cursor+=length; pool_expanded+=length;
+    *physical=pool_cursor; pool_cursor+=length;
     write_unlock();
     return 0;
 }
