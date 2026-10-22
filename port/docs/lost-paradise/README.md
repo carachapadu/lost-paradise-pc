@@ -17,7 +17,10 @@ Port nativo do **Lost Paradise** (PS4, CUSA12781, v1.09) sobre o core do `Hayato
   3585+ lotes de draws à GPU. Só com `--cpu-only` ele para em `sceVideoOutOpen`, como esperado.
 - Erros vistos: `image view type Color2D is incompatible with image type Color1D` (testar `TLG_BP09=1`/`TLG_BLOCK1D=1`);
   sem perfil de patches para CUSA12781; `iced_x86` não instalado (reescrita ISA indisponível, só importa em CPU sem MOVBE/BMI1/LZCNT).
-- Ainda não verificado: o que aparece na janela, entrada de pad, vídeos (CRI/Mana), save real, estabilidade em sessões longas.
+- **Jogável até o combate (2026-10-22):** o usuário passou da abertura, entrou numa partida e chegou ao combate; saiu por conta própria.
+  Defeito visto: blocos em xadrez na manga/ombro do Kenshiro na abertura (suspeita: texturas 1D, `TLG_BP09=1`/`TLG_BLOCK1D=1`).
+- Ainda não verificado: FPS, controle, vídeos longos, save real, estabilidade em sessões longas e o comando exato usado (ver abaixo);
+  o que aparece na janela, entrada de pad, vídeos (CRI/Mana), save real, estabilidade em sessões longas.
 
 ## Compilar no Windows (MSYS2 CLANG64)
 
@@ -65,6 +68,18 @@ python run.py                    # pipeline completo e primeiro boot
 
 Esperado no primeiro boot: parar no primeiro import não resolvido ou em algum comportamento
 do kernel ainda não coberto. Mande o log.
+
+## Rodar o jogo (sem limite de tempo)
+
+No shell MSYS2 CLANG64, na pasta `port`, depois do passo anterior (cópia preparada do jogo em `D:\LostParadise\work\game\CUSA12781`):
+
+```bash
+export TLG_SKIP_LINK_LIBC=1
+export TLG_GAME_DIR=/d/LostParadise/work/game/CUSA12781
+python run.py
+```
+
+Variáveis para o defeito das texturas 1D: `TLG_BP09=1` (toda textura 1D vira 2D) ou `TLG_BLOCK1D=1`.
 
 ## Pendências
 
