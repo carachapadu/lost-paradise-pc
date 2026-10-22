@@ -1,19 +1,19 @@
 #!/usr/bin/env bash
-# inFAMOUS Second Son: prepares the image, runs the game for N seconds and, optionally, presses buttons
+# Fist of the North Star: Lost Paradise: prepares the image, runs the game for N seconds and, optionally, presses buttons
 # from a script and saves screenshots (raw BGRA display dumps converted to PNG).
-# Usage: scripts/infamous_run.sh [seconds=120] [shots_dir] [press_script]
+# Usage: scripts/lostparadise_run.sh [seconds=120] [shots_dir] [press_script]
 #   press_script: lines "<second> <buttons...>" (e.g. "40 cross", "60 options"); each press lasts 0.3 s.
 # Only one game instance may run at a time on this machine: the script waits for any other.
-# ISS_GAME_DIR: the merged game folder (default game/CUSA00223, as in the launcher).
+# ISS_GAME_DIR: the merged game folder (default game/CUSA12781, as in the launcher).
 set -uo pipefail
 root=$(cd -- "$(dirname -- "$0")/.." && pwd)
 port=$root/port
 seconds=${1:-120}; shots=${2:-}; script=${3:-}
-dump=${ISS_GAME_DIR:-$root/game/CUSA00223}
+dump=${ISS_GAME_DIR:-$root/game/CUSA12781}
 # One game instance at a time on this machine (GAME_LOCK: a lock file shared with other runs).
-lock=${GAME_LOCK:-${XDG_RUNTIME_DIR:-/tmp}/infamous-game.lock}
-if [[ -z ${INFAMOUS_RUN_LOCKED:-} ]]; then
-    touch "$lock"; exec env INFAMOUS_RUN_LOCKED=1 flock "$lock" "$0" "$@"
+lock=${GAME_LOCK:-${XDG_RUNTIME_DIR:-/tmp}/lostparadise-game.lock}
+if [[ -z ${LOSTPARADISE_RUN_LOCKED:-} ]]; then
+    touch "$lock"; exec env LOSTPARADISE_RUN_LOCKED=1 flock "$lock" "$0" "$@"
 fi
 (cd "$port/scripts" &&
  python3 prepare.py "$dump" --out ../out >/dev/null &&
@@ -36,7 +36,7 @@ pad=$port/out/pad_input.txt; : > "$pad"; export ISS_PAD_FILE=$pad
 if [[ -n $shots ]]; then
     mkdir -p "$shots"; export ISS_FRAME_DUMP_TRIGGER=$shots/trigger ISS_DUMP_DIR=$shots
 fi
-export ISS_APP_NAME="inFAMOUS Second Son" ISS_APP_ID=infamous-pc
+export ISS_APP_NAME="Fist of the North Star: Lost Paradise" ISS_APP_ID=infamous-pc
 (cd "$port/user" && exec "$port/out/tlg-probe" "$port/out/boot-linked.bin" --app0 "$dump" --user . \
     --content-profile "$port/out/content.bin" "${isa[@]}" --timeout "$seconds") > "$log" 2>&1 &
 game=$!
