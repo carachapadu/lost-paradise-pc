@@ -47,6 +47,15 @@ WindowSDL::WindowSDL(s32 width_, s32 height_, const char* title) : width{width_}
     if (!SDL_InitSubSystem(SDL_INIT_VIDEO | SDL_INIT_GAMEPAD)) {
         UNREACHABLE_MSG("Failed to initialize SDL video: {}", SDL_GetError());
     }
+    // tlg: TLG_WINDOW_SIZE=WxH (launcher "Output resolution") opens the window at that size; with FSR 1
+    // on, the game's image is upscaled to it. The fit check below still keeps it inside the screen.
+    if (const char* size = std::getenv("TLG_WINDOW_SIZE")) {
+        int w = 0, h = 0;
+        if (std::sscanf(size, "%dx%d", &w, &h) == 2 && w >= 640 && h >= 360 && w <= 7680 && h <= 4320) {
+            width_ = w;
+            height_ = h;
+        }
+    }
     // tlg: the window opens at the game's size (1920x1080) unless the screen is smaller: on a
     // 1366x768 laptop it was larger than the screen and the picture was cut. It then opens at the
     // largest same-shape size that fits the usable area (taskbar and title bar kept clear); it can

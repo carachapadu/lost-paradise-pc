@@ -120,7 +120,8 @@ def prepare_game(settings, log):
 
 # ----------------------------------------------------------------------------- tlg.ini options
 DISPLAY_MODES = ('Windowed', 'Borderless', 'Fullscreen')
-DEFAULT_OPTIONS = {'display_mode': 'Windowed', 'vsync': '1', 'async_shaders': '1',
+OUTPUT_SIZES = ('Auto (1920x1080)', '1280x720', '1920x1080', '2560x1440', '3840x2160')
+DEFAULT_OPTIONS = {'display_mode': 'Windowed', 'vsync': '1', 'async_shaders': '1', 'fsr1': '1', 'rcas': '1',
                    'deferred_readback': '1', 'stale_readback': '1', 'mouse_enabled': '1'}
 TOGGLES = {  # launcher key -> (environment variable, label)
     'bp09': ('TLG_BP09', 'Texture fix BP09 (blocky/checkered textures)'),
@@ -150,6 +151,9 @@ def build_env(settings):
     env.update({'TLG_SKIP_LINK_LIBC': '1', 'TLG_DATA_DIR': str(data), 'TLG_USER_DIR': str(user_dir(settings)),
                 'ISS_USER_DIR': str(user_dir(settings)), 'TLG_CONFIG': str(ini_path(settings)),
                 'PYTHONIOENCODING': 'utf-8'})
+    size = settings.get('output_size', '')
+    if 'x' in size and size[0].isdigit():
+        env['TLG_WINDOW_SIZE'] = size.split()[0]
     for key, (name, _label) in TOGGLES.items():
         if settings.get(key):
             env[name] = '1'
@@ -273,6 +277,16 @@ def main_window():
     stale_var = tk.BooleanVar(value=options['stale_readback'] != '0')
     ttk.Label(tab_video, text='Display mode').grid(row=0, column=0, sticky='w')
     ttk.Combobox(tab_video, textvariable=display_var, values=DISPLAY_MODES, state='readonly', width=14).grid(row=0, column=1, sticky='w', padx=6)
+    size_var = tk.StringVar(value=settings.get('output_size') or OUTPUT_SIZES[0])
+    fsr_var = tk.BooleanVar(value=options['fsr1'] != '0')
+    rcas_var = tk.BooleanVar(value=options['rcas'] != '0')
+    ttk.Label(tab_video, text='Output resolution').grid(row=11, column=0, sticky='w', pady=(8, 0))
+    ttk.Combobox(tab_video, textvariable=size_var, values=OUTPUT_SIZES, state='readonly', width=16).grid(row=11, column=1, sticky='w', padx=6, pady=(8, 0))
+    ttk.Checkbutton(tab_video, text='FSR 1 upscaling to the output resolution', variable=fsr_var).grid(row=12, column=0, columnspan=2, sticky='w')
+    ttk.Checkbutton(tab_video, text='Sharpening (RCAS)', variable=rcas_var).grid(row=13, column=0, columnspan=2, sticky='w')
+    ttk.Label(tab_video, wraplength=640, text='The game renders at its own 1080p and is upscaled to the window size (up to 4K); '
+              'true internal 4K rendering needs a game patch that does not exist for this build. The window is kept inside your screen.'
+              ).grid(row=14, column=0, columnspan=2, sticky='w')
     ttk.Checkbutton(tab_video, text='VSync', variable=vsync_var).grid(row=1, column=0, columnspan=2, sticky='w')
     ttk.Checkbutton(tab_video, text='Compile shaders in the background (less stutter)', variable=async_var).grid(row=2, column=0, columnspan=2, sticky='w')
     ttk.Checkbutton(tab_video, text='Deferred image readback', variable=deferred_var).grid(row=3, column=0, columnspan=2, sticky='w')
@@ -334,11 +348,12 @@ def main_window():
     def collect():
         settings['game_dir'] = game_var.get().strip()
         settings['data_dir'] = save_var.get().strip()
+        settings['output_size'] = size_var.get()
         for key, var in toggle_vars.items():
             settings[key] = bool(var.get())
         save_settings(settings)
         write_options(settings, {
-            'display_mode': display_var.get(), 'vsync': int(vsync_var.get()), 'async_shaders': int(async_var.get()),
+            'display_mode': display_var.get(), 'vsync': int(vsync_var.get()), 'fsr1': int(fsr_var.get()), 'rcas': int(rcas_var.get()), 'async_shaders': int(async_var.get()),
             'deferred_readback': int(deferred_var.get()), 'stale_readback': int(stale_var.get()),
             'mouse_enabled': int(mouse_var.get())})
 

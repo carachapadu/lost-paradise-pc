@@ -17,6 +17,6 @@ Requirements: Windows 10/11 64-bit, a Vulkan 1.3 GPU with up-to-date drivers.
 - Blocky/checkered textures: enable the texture workarounds in **Graphics**.
 - Settings, saves and cache live in `%APPDATA%\LostParadise-PC\data` (change it in **Saves / cache**). The launcher backs saves up on request.
 - Log of the last run: `last-run.log` in that data folder.
-- Fixed 60 FPS; resolution/frame-rate patches are not available for this build.
+- Output resolution (720p to 4K) is in **Graphics**: the game renders at 1080p and is upscaled (FSR 1 + sharpening) to the window size. Fixed 60 FPS.
 
 Never share game files. The launcher only reads your dump and, for a decrypted `eboot.elf`, makes a small working folder of links.
