@@ -154,7 +154,8 @@ def main():
     mod_view = game if game.resolve() != original_game else None
     try:
         run_script('prepare.py', game, '--out', out)
-        run_script('link_libc.py', game, '--out', out)
+        if os.environ.get('TLG_SKIP_LINK_LIBC') != '1':  # Lost Paradise: link_modules.py links its libc.prx
+            run_script('link_libc.py', game, '--out', out)
         run_script('link_modules.py', game, '--out', out)
         # A failed rewrite prints its reason and the game starts without the table.
         isa_args = []

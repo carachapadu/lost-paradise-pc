@@ -1,0 +1,736 @@
+﻿origem,biblioteca,nome,nid,tipo,situacao,onde
+eboot,libSceAppContent,sceAppContentAppParamGetInt,99b82IKXpH4,func,runtime (NID),runtime_content.c
+eboot,libSceAppContent,sceAppContentGetAddcontInfo,m47juOmH0VE,func,runtime (só em jogo específico),runtime_infamous.c
+eboot,libSceAppContent,sceAppContentInitialize,R9lA82OraNs,func,runtime (NID),runtime_content.c
+eboot,libSceAppContent,sceAppContentTemporaryDataMount2,buYbeLOGWmA,func,runtime (só em jogo específico),runtime_gr2.c
+eboot,libSceAudioOut,sceAudioOutClose,s1--uE9mBFw,func,runtime,runtime_audio.c
+eboot,libSceAudioOut,sceAudioOutInit,JfEPXVxhFqA,func,runtime,runtime_audio.c
+eboot,libSceAudioOut,sceAudioOutOpen,ekNvsT22rsY,func,runtime,runtime_audio.c
+eboot,libSceAudioOut,sceAudioOutOutput,QOQtbeDqsT4,func,runtime,runtime_audio.c
+eboot,libSceAudioOut,sceAudioOutOutputs,w3PdaSTSwGE,func,runtime,runtime_audio.c
+eboot,libSceCommonDialog,sceCommonDialogInitialize,uoUpLGNkygk,func,runtime,runtime_services.c
+eboot,libSceErrorDialog,sceErrorDialogInitialize,I88KChlynSs,func,runtime (só em jogo específico),runtime_gr2.c
+eboot,libSceErrorDialog,sceErrorDialogOpen,M2ZF-ClLhgY,func,runtime (só em jogo específico),runtime_gr2.c
+eboot,libSceErrorDialog,sceErrorDialogTerminate,9XAxK2PMwk8,func,runtime (só em jogo específico),runtime_gr2.c
+eboot,libSceErrorDialog,sceErrorDialogUpdateStatus,WWiGuh9XfgQ,func,runtime (só em jogo específico),runtime_gr2.c
+eboot,libSceGameLiveStreaming,sceGameLiveStreamingEnableLiveStreaming,dWM80AX39o4,func,faltando,
+eboot,libSceGameLiveStreaming,sceGameLiveStreamingGetCurrentStatus,CoPMx369EqM,func,faltando,
+eboot,libSceGameLiveStreaming,sceGameLiveStreamingGetProgramInfo,OIIm19xu+NM,func,faltando,
+eboot,libSceGameLiveStreaming,sceGameLiveStreamingInitialize,kvYEw2lBndk,func,faltando,
+eboot,libSceGameLiveStreaming,sceGameLiveStreamingPermitLiveStreaming,K0QxEbD7q+c,func,faltando,
+eboot,libSceGameLiveStreaming,sceGameLiveStreamingPermitServerSideRecording,-EHnU68gExU,func,faltando,
+eboot,libSceGameLiveStreaming,sceGameLiveStreamingSetCameraFrameSetting,3PSiwAzFISE,func,faltando,
+eboot,libSceGameLiveStreaming,sceGameLiveStreamingSetInvitationSessionId,QmQYwQ7OTJI,func,faltando,
+eboot,libSceGameLiveStreaming,sceGameLiveStreamingSetMaxBitrate,q-kxuaF7URU,func,faltando,
+eboot,libSceGameLiveStreaming,sceGameLiveStreamingSetMetadata,hUY-mSOyGL0,func,faltando,
+eboot,libSceGameLiveStreaming,sceGameLiveStreamingTerminate,9yK6Fk8mKOQ,func,faltando,
+eboot,libSceGnmDriver,sceGnmAddEqEvent,b0xyllnVY-I,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmAreSubmitsAllowed,b08AgtPlHPg,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmBeginWorkload,ihxrbsoSKWc,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmComputeWaitOnAddress,ffrNQOshows,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmComputeWaitSemaphore,EJapNl2+pgU,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmCreateWorkloadStream,5udAm+6boVg,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDebugHardwareStatus,qpGITzPE+Zc,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDeleteEqEvent,PVT+fuoS9gU,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDestroyWorkloadStream,UtObDRQiGbs,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDingDong,bX5IbRvECXk,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDingDongForWorkload,byXlqupd8cE,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDisableMipStatsReport,HHo1BAljZO8,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDispatchDirect,0BzLGljcwBo,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDispatchIndirect,Z43vKp5k7r0,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDispatchIndirectOnMec,wED4ZXCFJT0,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDispatchInitDefaultHardwareState,nF6bFRUBRAU,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDrawIndex,HlTPoZ-oY7Y,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDrawIndexAuto,GGsn7jMTxw4,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDrawIndexIndirect,ED9-Fjr8Ta4,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDrawIndexIndirectCountMulti,thbPcG7E7qk,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDrawIndexMultiInstanced,jHdPvIzlpKc,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDrawIndexOffset,oYM+YzfCm2Y,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDrawIndirect,4v+otIIdjqg,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDrawIndirectCountMulti,cUCo8OvArrw,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDrawInitDefaultHardwareState350,yb2cRhagD1I,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDrawInitToDefaultContextState400,im2ZuItabu4,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDrawOpaqueAuto,stDSYW2SBVM,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDriverCaptureInProgress,TLV4mswiZ4A,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDriverTraceInProgress,R6z1xM3pW-w,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmDriverTriggerCapture,d88anrgNoKY,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmEndWorkload,Fa3x75OOLRA,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmFlushGarlic,iBt3Oe00Kvc,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmGetEqEventType,UoYY0DWMC0U,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmGetEqTimeStamp,H7-fgvEutM0,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmGetGpuBlockStatus,oL4hGI1PMpw,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmGetGpuInfoStatus,tZCSL5ulnB4,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmGetLastWaitedAddress,iFirFzgYsvw,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmGetNumTcaUnits,KnldROUkWJY,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmGetOffChipTessellationBufferSize,FFVZcCu3zWU,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmGetPhysicalCounterFromVirtualized,dewXw5roLs0,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmGetProtectionFaultTimeStamp,fzJdEihTFV4,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmGetShaderProgramBaseAddress,nEyFbYUloIM,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmGetShaderStatus,k7iGTvDQPLQ,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmGetTheTessellationFactorRingBufferBaseAddress,ln33zjBrfjk,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmInsertDingDongMarker,NfvOrNzy6sk,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmInsertPopMarker,7qZVNgEu+SY,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmInsertPushColorMarker,aPIZJTXC+cU,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmInsertPushMarker,W1Etj-jlW7Y,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmInsertSetColorMarker,aj3L-iaFmyk,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmInsertSetMarker,jiItzS6+22g,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmInsertThreadTraceMarker,URDgJcXhQOs,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmInsertWaitFlipDone,1qXLHIpROPE,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmIsUserPaEnabled,jg33rEKLfVs,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmLogicalCuIndexToPhysicalCuIndex,26PM5Mzl8zc,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmLogicalCuMaskToPhysicalCuMask,RU74kek-N0c,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmLogicalTcaUnitToPhysical,Kl0Z3LH07QI,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmMapComputeQueue,29oKvKXzEZo,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmMapComputeQueueWithPriority,A+uGq+3KFtQ,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmRequestFlipAndSubmitDone,gObODli-OH8,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmRequestFlipAndSubmitDoneForWorkload,6YRHhh5mHCs,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmRequestMipStatsReportAndReset,f85orjx7qts,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmResetVgtControl,MYRtYhojKdA,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmSetCsShaderWithModifier,Kx-h-nWQJ8A,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmSetEmbeddedPsShader,X9Omw9dwv5M,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmSetEmbeddedVsShader,+AFvOEXrKJk,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmSetEsShader,FUHG8sQ3R58,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmSetGsRingSizes,jtkqXpAOY6w,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmSetGsShader,UJwNuMBcUAk,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmSetHsShader,VJNjFtqiF5w,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmSetLsShader,vckdzbQ46SI,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmSetPsShader350,5uFKckiJYRM,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmSetVgtControl,cFCp0NX8wf0,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmSetVsShader,gAhCn6UiU4Y,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmSetWaveLimitMultipliers,XiyzNZ9J4nQ,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmSetupMipStatsReport,+xuDhxlWRPg,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmSubmitAndFlipCommandBuffers,xbxNatawohc,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmSubmitAndFlipCommandBuffersForWorkload,Ga6r7H6Y0RI,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmSubmitCommandBuffers,zwY0YV91TTI,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmSubmitCommandBuffersForWorkload,jRcI8VcgTz4,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmSubmitDone,yvZ73uQUqrk,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmUnmapComputeQueue,ArSg-TGinhk,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmUpdateGsShader,nLM2i2+65hA,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmUpdateHsShader,GNlx+y7xPdE,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmUpdatePsShader350,mLVL7N7BVBg,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceGnmUpdateVsShader,V31V01UiScY,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceRazorCaptureImmediate,u9YKpRRHe-M,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceGnmDriver,sceRazorIsLoaded,f33OrruQYbM,func,GPU (shadPS4),gpu/shadps4/core/libraries/gnmdriver/gnmdriver.cpp
+eboot,libSceHttp,sceHttpInit,A9cVMUtEp4Y,func,runtime,runtime_services.c
+eboot,libSceHttp,sceHttpTerm,Ik-KpLTlf7Q,func,runtime,runtime_services.c
+eboot,libSceImeDialog,sceImeDialogGetPanelSize,wqsJvRXwl58,func,faltando,
+eboot,libSceImeDialog,sceImeDialogGetResult,x01jxu+vxlc,func,runtime,runtime_services.c
+eboot,libSceImeDialog,sceImeDialogGetStatus,IADmD4tScBY,func,runtime,runtime_services.c
+eboot,libSceImeDialog,sceImeDialogInit,NUeBrN7hzf0,func,runtime,runtime_services.c
+eboot,libSceImeDialog,sceImeDialogTerm,gyTyVn+bXMw,func,runtime,runtime_services.c
+eboot,libSceMsgDialog,sceMsgDialogGetResult,Lr8ovHH9l6A,func,runtime,runtime_services.c
+eboot,libSceMsgDialog,sceMsgDialogInitialize,lDqxaY1UbEo,func,runtime,runtime_services.c
+eboot,libSceMsgDialog,sceMsgDialogOpen,b06Hh0DPEaE,func,runtime,runtime_services.c
+eboot,libSceMsgDialog,sceMsgDialogTerminate,ePw-kqZmelo,func,runtime,runtime_services.c
+eboot,libSceMsgDialog,sceMsgDialogUpdateStatus,6fIC3XKt2k0,func,runtime,runtime_services.c
+eboot,libSceNet,sceNetPoolCreate,dgJBaeJnGpo,func,runtime,runtime_services.c
+eboot,libSceNet,sceNetPoolDestroy,K7RlrTkI-mw,func,runtime,runtime_services.c
+eboot,libSceNpManager,sceNpSetNpTitleId,Ec63y59l9tw,func,runtime,runtime_services.c
+eboot,libSceNpTrophy,sceNpTrophyCreateContext,XbkjbobZlCY,func,runtime,runtime_services.c
+eboot,libSceNpTrophy,sceNpTrophyCreateHandle,q7U6tEAQf7c,func,runtime,runtime_services.c
+eboot,libSceNpTrophy,sceNpTrophyDestroyContext,E1Wrwd07Lr8,func,runtime,runtime_services.c
+eboot,libSceNpTrophy,sceNpTrophyDestroyHandle,GNcF4oidY0Y,func,runtime,runtime_services.c
+eboot,libSceNpTrophy,sceNpTrophyRegisterContext,TJCAxto9SEU,func,runtime,runtime_services.c
+eboot,libSceNpTrophy,sceNpTrophyUnlockTrophy,28xmRUFao68,func,runtime,runtime_services.c
+eboot,libSceNpWebApi,sceNpWebApiInitialize,G3AnLNdRBjE,func,runtime,runtime_services.c
+eboot,libSceNpWebApi,sceNpWebApiTerminate,asz3TtIqGF8,func,runtime,runtime_services.c
+eboot,libScePad,scePadClose,6ncge5+l5Qs,func,runtime,runtime_pad.c
+eboot,libScePad,scePadGetControllerInformation,gjP9-KQzoUk,func,runtime,runtime_pad.c
+eboot,libScePad,scePadInit,hv1luiJrqQM,func,runtime,runtime_pad.c
+eboot,libScePad,scePadOpen,xk0AcarP3V4,func,runtime,runtime_pad.c
+eboot,libScePad,scePadReadState,YndgXqQVV7c,func,runtime,runtime_pad.c
+eboot,libScePad,scePadResetLightBar,DscD1i9HX1w,func,runtime,runtime_pad.c
+eboot,libScePad,scePadSetAngularVelocityDeadbandState,r44mAxdSG+U,func,runtime,runtime_pad.c
+eboot,libScePad,scePadSetLightBar,RR4novUEENY,func,runtime,runtime_pad.c
+eboot,libScePad,scePadSetMotionSensorState,clVvL4ZDntw,func,runtime,"runtime_pad.c,runtime_tlg.c"
+eboot,libScePad,scePadSetTiltCorrectionState,vDLMoJLde8I,func,runtime,runtime_pad.c
+eboot,libScePad,scePadSetVibration,yFVnOdGxvZY,func,runtime,runtime_pad.c
+eboot,libScePlayGo,scePlayGoClose,Uco1I0dlDi8,func,runtime,runtime_services.c
+eboot,libScePlayGo,scePlayGoGetEta,v6EZ-YWRdMs,func,runtime (só em jogo específico),runtime_infamous.c
+eboot,libScePlayGo,scePlayGoGetInstallSpeed,rvBSfTimejE,func,runtime,runtime_services.c
+eboot,libScePlayGo,scePlayGoGetToDoList,Nn7zKwnA5q0,func,runtime (só em jogo específico),runtime_infamous.c
+eboot,libScePlayGo,scePlayGoInitialize,ts6GlZOKRrE,func,runtime,runtime_services.c
+eboot,libScePlayGo,scePlayGoOpen,M1Gma1ocrGE,func,runtime,runtime_services.c
+eboot,libScePlayGo,scePlayGoSetInstallSpeed,4AAcTU9R3XM,func,runtime,runtime_services.c
+eboot,libScePlayGo,scePlayGoTerminate,MPe0EeBGM-E,func,runtime,runtime_services.c
+eboot,libSceRemoteplay,sceRemoteplayInitialize,k1SwgkMSOM8,func,faltando,
+eboot,libSceRemoteplay,sceRemoteplayTerminate,BOwybKVa3Do,func,faltando,
+eboot,libSceRtc,sceRtcConvertLocalTimeToUtc,8Yr143yEnRo,func,runtime,runtime_rtc.c
+eboot,libSceRtc,sceRtcConvertUtcToLocalTime,M1TvFst-jrM,func,runtime,runtime_rtc.c
+eboot,libSceRtc,sceRtcGetCurrentNetworkTick,zO9UL3qIINQ,func,runtime,runtime_rtc.c
+eboot,libSceRtc,sceRtcGetTick,8w-H19ip48I,func,runtime,runtime_rtc.c
+eboot,libSceRtc,sceRtcSetTick,ueega6v3GUw,func,runtime,runtime_rtc.c
+eboot,libSceRudp,sceRudpEnableInternalIOThread,6PBNpsgyaxw,func,faltando,
+eboot,libSceRudp,sceRudpEnd,3hBvwqEwqj8,func,faltando,
+eboot,libSceRudp,sceRudpInit,amuBfI-AQc4,func,faltando,
+eboot,libSceSaveData,sceSaveDataDirNameSearch,dyIhnXq-0SM,func,runtime,runtime_savedata.c
+eboot,libSceSaveData,sceSaveDataInitialize3,TywrFKCoLGY,func,runtime,runtime_savedata.c
+eboot,libSceSaveData,sceSaveDataMount2,0z45PIH+SNI,func,runtime,runtime_savedata.c
+eboot,libSceSaveData,sceSaveDataSaveIcon,c88Yy54Mx0w,func,runtime,runtime_savedata.c
+eboot,libSceSaveData,sceSaveDataSetParam,85zul--eGXs,func,runtime,runtime_savedata.c
+eboot,libSceSaveData,sceSaveDataTerminate,yKDy8S5yLA0,func,runtime,runtime_savedata.c
+eboot,libSceSaveData,sceSaveDataUmount,BMR4F-Uek3E,func,runtime,runtime_savedata.c
+eboot,libSceSaveDataDialog,sceSaveDataDialogClose,fH46Lag88XY,func,runtime,runtime_services.c
+eboot,libSceSaveDataDialog,sceSaveDataDialogGetResult,yEiJ-qqr6Cg,func,runtime,runtime_services.c
+eboot,libSceSaveDataDialog,sceSaveDataDialogInitialize,s9e3+YpRnzw,func,runtime,runtime_services.c
+eboot,libSceSaveDataDialog,sceSaveDataDialogIsReadyToDisplay,en7gNVnh878,func,runtime,runtime_services.c
+eboot,libSceSaveDataDialog,sceSaveDataDialogOpen,4tPhsP6FpDI,func,runtime,runtime_services.c
+eboot,libSceSaveDataDialog,sceSaveDataDialogProgressBarSetValue,hay1CfTmLyA,func,runtime,runtime_services.c
+eboot,libSceSaveDataDialog,sceSaveDataDialogTerminate,YuH2FA7azqQ,func,runtime,runtime_services.c
+eboot,libSceSaveDataDialog,sceSaveDataDialogUpdateStatus,KK3Bdg1RWK0,func,runtime,runtime_services.c
+eboot,libSceScreenShot,sceScreenShotDisable,tIYf0W5VTi8,func,faltando,
+eboot,libSceScreenShot,sceScreenShotEnable,2xxUtuC-RzE,func,faltando,
+eboot,libSceScreenShot,sceScreenShotSetOverlayImage,ahHhOf+QNkQ,func,faltando,
+eboot,libSceSharePlay,sceSharePlayInitialize,isruqthpYcw,func,faltando,
+eboot,libSceSharePlay,sceSharePlaySetProhibition,co2NCj--pnc,func,faltando,
+eboot,libSceSharePlay,sceSharePlayTerminate,UaLjloJinow,func,faltando,
+eboot,libSceSsl,sceSslInit,hdpVEUDFW3s,func,runtime,runtime_services.c
+eboot,libSceSsl,sceSslTerm,0K1yQ6Lv-Yc,func,runtime,runtime_services.c
+eboot,libSceSysmodule,sceSysmoduleIsLoaded,fMP5NHUOaMk,func,runtime (NID),runtime_content.c
+eboot,libSceSysmodule,sceSysmoduleLoadModule,g8cM39EUZ6o,func,runtime (NID),runtime_content.c
+eboot,libSceSysmodule,sceSysmoduleUnloadModule,eR2bZFAAU0Q,func,runtime (NID),runtime_content.c
+eboot,libSceSystemService,sceSystemServiceGetDisplaySafeAreaInfo,1n37q1Bvc5Y,func,runtime,runtime_services.c
+eboot,libSceSystemService,sceSystemServiceGetStatus,rPo6tV8D9bM,func,runtime,runtime_services.c
+eboot,libSceSystemService,sceSystemServiceHideSplashScreen,Vo5V8KAwCmk,func,runtime,runtime_services.c
+eboot,libSceSystemService,sceSystemServiceLoadExec,JoBqSQt1yyA,func,runtime (só em jogo específico),runtime_tlg.c
+eboot,libSceSystemService,sceSystemServiceReceiveEvent,656LMQSrg6U,func,runtime,runtime_services.c
+eboot,libSceUserService,sceUserServiceGetEvent,yH17Q6NWtVg,func,runtime,runtime_services.c
+eboot,libSceUserService,sceUserServiceGetInitialUser,CdWp0oHWGr0,func,runtime,runtime_services.c
+eboot,libSceUserService,sceUserServiceGetLoginUserIdList,fPhymKNvK-A,func,runtime,runtime_services.c
+eboot,libSceUserService,sceUserServiceGetUserColor,lUoqwTQu4Go,func,faltando,
+eboot,libSceUserService,sceUserServiceGetUserName,1xxcMiGu2fo,func,runtime,runtime_services.c
+eboot,libSceUserService,sceUserServiceInitialize,j3YMu1MVNNo,func,runtime,runtime_services.c
+eboot,libSceUserService,sceUserServiceTerminate,bwFjS+bX9mA,func,runtime,runtime_services.c
+eboot,libSceVideoOut,sceVideoOutAddFlipEvent,HXzjK9yI30k,func,GPU (shadPS4),gpu/shadps4/core/libraries/videoout/video_out.cpp
+eboot,libSceVideoOut,sceVideoOutAdjustColor_,pv9CI5VC+R0,func,GPU (shadPS4),gpu/shadps4/core/libraries/videoout/video_out.cpp
+eboot,libSceVideoOut,sceVideoOutClose,uquVH4-Du78,func,GPU (shadPS4),gpu/shadps4/core/libraries/videoout/video_out.cpp
+eboot,libSceVideoOut,sceVideoOutColorSettingsSetGamma_,DYhhWbJSeRg,func,GPU (shadPS4),gpu/shadps4/core/libraries/videoout/video_out.cpp
+eboot,libSceVideoOut,sceVideoOutConfigureOutputMode_,N1bEoJ4SRw4,func,GPU (shadPS4),gpu/shadps4/core/libraries/videoout/video_out.cpp
+eboot,libSceVideoOut,sceVideoOutCursorDisable,fEPEwROdCwM,func,faltando,
+eboot,libSceVideoOut,sceVideoOutCursorEnable,UPZWCH8qTM4,func,faltando,
+eboot,libSceVideoOut,sceVideoOutCursorSetHotSpot,jr52f45OlWg,func,faltando,
+eboot,libSceVideoOut,sceVideoOutCursorSetImageAddress,u-9bhWQApq8,func,faltando,
+eboot,libSceVideoOut,sceVideoOutCursorSetPosition,N17AK88NdD0,func,faltando,
+eboot,libSceVideoOut,sceVideoOutDeleteFlipEvent,-Ozn0F1AFRg,func,GPU (shadPS4),gpu/shadps4/core/libraries/videoout/video_out.cpp
+eboot,libSceVideoOut,sceVideoOutGetFlipStatus,SbU3dwp80lQ,func,GPU (shadPS4),gpu/shadps4/core/libraries/videoout/video_out.cpp
+eboot,libSceVideoOut,sceVideoOutGetResolutionStatus,6kPnj51T62Y,func,GPU (shadPS4),gpu/shadps4/core/libraries/videoout/video_out.cpp
+eboot,libSceVideoOut,sceVideoOutIsFlipPending,zgXifHT9ErY,func,GPU (shadPS4),gpu/shadps4/core/libraries/videoout/video_out.cpp
+eboot,libSceVideoOut,sceVideoOutModeSetAny_,pjkDsgxli6c,func,GPU (shadPS4),gpu/shadps4/core/libraries/videoout/video_out.cpp
+eboot,libSceVideoOut,sceVideoOutOpen,Up36PTk687E,func,GPU (shadPS4),gpu/shadps4/core/libraries/videoout/video_out.cpp
+eboot,libSceVideoOut,sceVideoOutRegisterBuffers,w3BY+tAEiQY,func,GPU (shadPS4),gpu/shadps4/core/libraries/videoout/video_out.cpp
+eboot,libSceVideoOut,sceVideoOutSetBufferAttribute,i6-sR91Wt-4,func,GPU (shadPS4),gpu/shadps4/core/libraries/videoout/video_out.cpp
+eboot,libSceVideoOut,sceVideoOutSetFlipRate,CBiu4mCE1DA,func,GPU (shadPS4),gpu/shadps4/core/libraries/videoout/video_out.cpp
+eboot,libSceVideoOut,sceVideoOutSetWindowModeMargins,MTxxrOCeSig,func,GPU (shadPS4),gpu/shadps4/core/libraries/videoout/video_out.cpp
+eboot,libSceVideoOut,sceVideoOutSubmitFlip,U46NwOiJpys,func,GPU (shadPS4),gpu/shadps4/core/libraries/videoout/video_out.cpp
+eboot,libSceVideoOut,sceVideoOutUnregisterBuffers,N5KDtkIjjJ4,func,GPU (shadPS4),gpu/shadps4/core/libraries/videoout/video_out.cpp
+eboot,libSceVideoOut,sceVideoOutWaitVblank,j6RaAUlaLv0,func,GPU (shadPS4),gpu/shadps4/core/libraries/videoout/video_out.cpp
+eboot,libSceVideoRecording,sceVideoRecordingSetInfo,Fc8qxlKINYQ,func,faltando,
+eboot,libSceZlib,sceZlibFinalize,6na+Sa-B83w,func,faltando,
+eboot,libSceZlib,sceZlibGetResult,2eDcGHC0YaM,func,faltando,
+eboot,libSceZlib,sceZlibInflate,TLar1HULv1Q,func,faltando,
+eboot,libSceZlib,sceZlibInitialize,m1YErdIXCp4,func,faltando,
+eboot,libSceZlib,sceZlibWaitForDone,uB8VlDD4e0s,func,faltando,
+eboot,libc,Need_sceLibc,P330P3dFF68,data,libc.prx do jogo (confirmar),
+eboot,libc,_Exit,wZi5ly2guNw,func,libc.prx do jogo (confirmar),
+eboot,libc,_FLog,jjjRS7l1MPM,func,libc.prx do jogo (confirmar),
+eboot,libc,_FSin,ZtjspkJQ+vw,func,libc.prx do jogo (confirmar),
+eboot,libc,_Stderr,H8AprKeZtNg,data,libc.prx do jogo (confirmar),
+eboot,libc,_Stdout,2sWzhYqFH4E,data,libc.prx do jogo (confirmar),
+eboot,libc,_Stoul,zlfEH8FmyUA,func,libc.prx do jogo (confirmar),
+eboot,libc,__cxa_atexit,tsvEmnenz48,func,runtime (NID),runtime.c
+eboot,libc,__cxa_guard_acquire,3GPpjQdAMTw,func,runtime (NID),runtime.c
+eboot,libc,__cxa_guard_release,9rAeANT2tyE,func,runtime (NID),runtime.c
+eboot,libc,__cxa_pure_virtual,zr094EQ39Ww,func,libc.prx do jogo (confirmar),
+eboot,libc,_init_env,bzQExy189ZI,func,runtime (NID),runtime.c
+eboot,libc,acosf,QI-x0SL8jhw,func,libc.prx do jogo (confirmar),
+eboot,libc,asinf,GZWjF-YIFFk,func,libc.prx do jogo (confirmar),
+eboot,libc,atan2,HUbZmOnT-Dg,func,libc.prx do jogo (confirmar),
+eboot,libc,atan2f,EH-x713A99c,func,libc.prx do jogo (confirmar),
+eboot,libc,atexit,8G2LB+A3rzg,func,runtime (NID),runtime.c
+eboot,libc,atof,SRI6S9B+-a4,func,libc.prx do jogo (confirmar),
+eboot,libc,bsearch,NesIgTmfF0Q,func,libc.prx do jogo (confirmar),
+eboot,libc,catchReturnFromMain,XKRegsFpEpk,func,libc.prx do jogo (confirmar),
+eboot,libc,exit,uMei1W9uyNo,func,runtime (NID),runtime.c
+eboot,libc,exp2f,wuAQt-j+p4o,func,libc.prx do jogo (confirmar),
+eboot,libc,expf,8zsu04XNsZ4,func,libc.prx do jogo (confirmar),
+eboot,libc,fflush,MUjC4lbHrK4,func,libc.prx do jogo (confirmar),
+eboot,libc,fmodf,88Vv-AzHVj8,func,libc.prx do jogo (confirmar),
+eboot,libc,free,tIhsqj0qsFE,func,libc.prx do jogo (confirmar),
+eboot,libc,fwrite,MpxhMh8QFro,func,libc.prx do jogo (confirmar),
+eboot,libc,localtime_s,fiiNDnNBKVY,func,libc.prx do jogo (confirmar),
+eboot,libc,malloc,gQX+4GDQjpM,func,libc.prx do jogo (confirmar),
+eboot,libc,malloc_usable_size,NDcSfcYZRC8,func,libc.prx do jogo (confirmar),
+eboot,libc,memalign,Ujf3KzMvRmI,func,libc.prx do jogo (confirmar),
+eboot,libc,memcmp,DfivPArhucg,func,runtime (NID),runtime.c
+eboot,libc,memcpy,Q3VBxCXhUHs,func,runtime (NID),runtime.c
+eboot,libc,memmove,+P6FRGH4LfA,func,runtime (NID),runtime.c
+eboot,libc,memset,8zTFvBIAIN8,func,runtime (NID),runtime.c
+eboot,libc,modf,0WMHDb5Dt94,func,libc.prx do jogo (confirmar),
+eboot,libc,powf,1D0H2KNjshE,func,libc.prx do jogo (confirmar),
+eboot,libc,printf,hcuQgD53UxM,func,libc.prx do jogo (confirmar),
+eboot,libc,putchar,m5wN+SwZOR4,func,libc.prx do jogo (confirmar),
+eboot,libc,puts,YQ0navp+YIc,func,libc.prx do jogo (confirmar),
+eboot,libc,qsort,AEJdIVZTEmo,func,libc.prx do jogo (confirmar),
+eboot,libc,reallocalign,OGybVuPAhAY,func,libc.prx do jogo (confirmar),
+eboot,libc,setvbuf,QMFyLoqNxIg,func,libc.prx do jogo (confirmar),
+eboot,libc,sprintf,tcVi5SivF7Q,func,libc.prx do jogo (confirmar),
+eboot,libc,sqrtf,Q+xU11-h0xQ,func,libc.prx do jogo (confirmar),
+eboot,libc,sscanf,1Pk0qZQGeWo,func,libc.prx do jogo (confirmar),
+eboot,libc,strcat,Ls4tzzhimqQ,func,libc.prx do jogo (confirmar),
+eboot,libc,strchr,ob5xAW4ln-0,func,libc.prx do jogo (confirmar),
+eboot,libc,strcmp,Ovb2dSJOAuE,func,libc.prx do jogo (confirmar),
+eboot,libc,strcpy,kiZSXIWd9vg,func,libc.prx do jogo (confirmar),
+eboot,libc,strlen,j4ViWNHEgww,func,runtime (NID),runtime.c
+eboot,libc,strncat,kHg45qPC6f0,func,libc.prx do jogo (confirmar),
+eboot,libc,strncmp,aesyjrHVWy4,func,libc.prx do jogo (confirmar),
+eboot,libc,strncpy,6sJWiWSRuqk,func,libc.prx do jogo (confirmar),
+eboot,libc,strrchr,9yDWMxEFdJU,func,libc.prx do jogo (confirmar),
+eboot,libc,strstr,viiwFMaNamA,func,libc.prx do jogo (confirmar),
+eboot,libc,strtok,oVkZ8W8-Q8A,func,libc.prx do jogo (confirmar),
+eboot,libc,strtol,mXlxhmLNMPg,func,libc.prx do jogo (confirmar),
+eboot,libc,tan,T7uyNqP7vQA,func,libc.prx do jogo (confirmar),
+eboot,libc,vsnprintf,Q2V+iqvjgC0,func,libc.prx do jogo (confirmar),
+eboot,libc,vsprintf,jbz9I9vkqkk,func,libc.prx do jogo (confirmar),
+eboot,libc,wcschr,Ezzq78ZgHPs,func,libc.prx do jogo (confirmar),
+eboot,libc,wcscpy,FM5NPnLqBc8,func,libc.prx do jogo (confirmar),
+eboot,libc,wcslen,WkkeywLJcgU,func,libc.prx do jogo (confirmar),
+eboot,libc,wcsncpy,0nV21JjYCH8,func,libc.prx do jogo (confirmar),
+eboot,libc,wcsrchr,g3ShSirD50I,func,libc.prx do jogo (confirmar),
+eboot,libc,wprintf,OGVdXU3E-xg,func,libc.prx do jogo (confirmar),
+eboot,libkernel,__stack_chk_fail,Ou3iL1abvng,func,runtime (NID),runtime.c
+eboot,libkernel,__stack_chk_guard,f7uOxY9mM1U,data,runtime (NID),runtime.c
+eboot,libkernel,__tls_get_addr,vNe1w4diLCs,func,runtime (NID),runtime.c
+eboot,libkernel,sceKernelAllocateDirectMemory,rTXw65xmLIA,func,runtime (NID),runtime_memory.c
+eboot,libkernel,sceKernelCheckReachability,uWyW3v98sU4,func,runtime,runtime_file.c
+eboot,libkernel,sceKernelClose,UK2Tl2DWUns,func,runtime,runtime_file.c
+eboot,libkernel,sceKernelCreateEqueue,D0OdFMjp46I,func,GPU (shadPS4),gpu/shadps4/core/libraries/kernel/equeue.cpp
+eboot,libkernel,sceKernelCreateSema,188x57JYp0g,func,runtime (NID),runtime_sema.c
+eboot,libkernel,sceKernelDeleteEqueue,jpFjmgAC5AE,func,GPU (shadPS4),gpu/shadps4/core/libraries/kernel/equeue.cpp
+eboot,libkernel,sceKernelDeleteSema,R1Jvn8bSCW8,func,runtime (NID),runtime_sema.c
+eboot,libkernel,sceKernelFstat,kBwCPsYX-m4,func,runtime,runtime_file.c
+eboot,libkernel,sceKernelFsync,fTx66l5iWIA,func,runtime,runtime_file.c
+eboot,libkernel,sceKernelFtruncate,VW3TVZiM4-E,func,runtime,runtime_file.c
+eboot,libkernel,sceKernelGetCpumode,VOx8NGmHXTs,func,faltando,
+eboot,libkernel,sceKernelGetDirectMemorySize,pO96TwzOm5E,func,runtime (NID),runtime_memory.c
+eboot,libkernel,sceKernelGetProcessTimeCounter,fgxnMeTNUtY,func,runtime,runtime_kernel.c
+eboot,libkernel,sceKernelGetProcessTimeCounterFrequency,BNowx2l588E,func,runtime,runtime_kernel.c
+eboot,libkernel,sceKernelGetdirentries,taRWhTJFTgE,func,runtime,runtime_file.c
+eboot,libkernel,sceKernelGettimeofday,ejekcaNQNq0,func,runtime,runtime_kernel.c
+eboot,libkernel,sceKernelIsNeoMode,WslcK1FQcGI,func,runtime (só em jogo específico),runtime_tlg.c
+eboot,libkernel,sceKernelLseek,oib76F-12fk,func,runtime,runtime_file.c
+eboot,libkernel,sceKernelMapDirectMemory,L-Q3LEjIbgA,func,runtime (NID),runtime_memory.c
+eboot,libkernel,sceKernelMemoryPoolBatch,YN878uKRBbE,func,faltando,
+eboot,libkernel,sceKernelMemoryPoolCommit,Vzl66WmfLvk,func,faltando,
+eboot,libkernel,sceKernelMemoryPoolDecommit,LXo1tpFqJGs,func,faltando,
+eboot,libkernel,sceKernelMemoryPoolExpand,qCSfqDILlns,func,faltando,
+eboot,libkernel,sceKernelMemoryPoolReserve,pU-QydtGcGY,func,faltando,
+eboot,libkernel,sceKernelMkdir,1-LFLmRFxxM,func,runtime,runtime_file.c
+eboot,libkernel,sceKernelOpen,1G3lF1Gg1k8,func,runtime,runtime_file.c
+eboot,libkernel,sceKernelPollSema,12wOHk8ywb0,func,runtime (NID),runtime_sema.c
+eboot,libkernel,sceKernelPread,+r3rMFwItV4,func,runtime,runtime_file.c
+eboot,libkernel,sceKernelRead,Cg4srZ6TKbU,func,runtime,runtime_file.c
+eboot,libkernel,sceKernelReleaseDirectMemory,MBuItvba6z8,func,runtime (NID),runtime_memory.c
+eboot,libkernel,sceKernelRename,52NcYU9+lEo,func,runtime,runtime_file.c
+eboot,libkernel,sceKernelRmdir,naInUjYt3so,func,runtime,runtime_file.c
+eboot,libkernel,sceKernelSetFsstParam,VjBtg5Btl94,func,faltando,
+eboot,libkernel,sceKernelSignalSema,4czppHBiriw,func,runtime (NID),runtime_sema.c
+eboot,libkernel,sceKernelStat,eV9wAD2riIA,func,runtime,runtime_file.c
+eboot,libkernel,sceKernelUnlink,AUXVxWeJU-A,func,runtime,runtime_file.c
+eboot,libkernel,sceKernelUsleep,1jfXLRVzisc,func,runtime,runtime_kernel.c
+eboot,libkernel,sceKernelWaitEqueue,fzyMKs9kim0,func,GPU (shadPS4),gpu/shadps4/core/libraries/kernel/equeue.cpp
+eboot,libkernel,sceKernelWaitSema,Zxa0VhQVTsk,func,runtime (NID),runtime_sema.c
+eboot,libkernel,sceKernelWrite,4wSze92BhLI,func,runtime,runtime_file.c
+eboot,libkernel,scePthreadAttrDestroy,62KCwEMmzcM,func,runtime (NID),runtime_thread.c
+eboot,libkernel,scePthreadAttrInit,nsYoNRywwNg,func,runtime (NID),runtime_thread.c
+eboot,libkernel,scePthreadAttrSetaffinity,3qxgM4ezETA,func,runtime (NID),runtime_thread.c
+eboot,libkernel,scePthreadAttrSetdetachstate,-Wreprtu0Qs,func,runtime (NID),runtime_thread.c
+eboot,libkernel,scePthreadAttrSetinheritsched,eXbUSpEaTsA,func,runtime (NID),runtime_thread.c
+eboot,libkernel,scePthreadAttrSetschedparam,DzES9hQF4f4,func,runtime (NID),runtime_thread.c
+eboot,libkernel,scePthreadAttrSetstacksize,UTXzJbWhhTE,func,runtime (NID),runtime_thread.c
+eboot,libkernel,scePthreadCondBroadcast,JGgj7Uvrl+A,func,runtime (NID),runtime_mutex.c
+eboot,libkernel,scePthreadCondDestroy,g+PZd2hiacg,func,runtime (NID),runtime_mutex.c
+eboot,libkernel,scePthreadCondInit,2Tb92quprl0,func,runtime (NID),runtime_mutex.c
+eboot,libkernel,scePthreadCondWait,WKAXJ4XBPQ4,func,runtime (NID),runtime_mutex.c
+eboot,libkernel,scePthreadCondattrDestroy,waPcxYiR3WA,func,runtime (NID),runtime_mutex.c
+eboot,libkernel,scePthreadCondattrInit,m5-2bsNfv7s,func,runtime (NID),runtime_mutex.c
+eboot,libkernel,scePthreadCreate,6UgtwV+0zb4,func,runtime (NID),runtime_thread.c
+eboot,libkernel,scePthreadGetaffinity,rcrVFJsQWRY,func,runtime (NID),runtime_thread.c
+eboot,libkernel,scePthreadGetname,How7B8Oet6k,func,runtime (NID),runtime_thread.c
+eboot,libkernel,scePthreadGetprio,1tKyG7RlMJo,func,runtime (NID),runtime_thread.c
+eboot,libkernel,scePthreadJoin,onNY9Byn-W8,func,runtime (NID),runtime_thread.c
+eboot,libkernel,scePthreadMutexDestroy,2Of0f+3mhhE,func,runtime (NID),runtime_mutex.c
+eboot,libkernel,scePthreadMutexInit,cmo1RIYva9o,func,runtime (NID),runtime_mutex.c
+eboot,libkernel,scePthreadMutexLock,9UK1vLZQft4,func,runtime (NID),runtime_mutex.c
+eboot,libkernel,scePthreadMutexUnlock,tn3VlD0hG60,func,runtime (NID),runtime_mutex.c
+eboot,libkernel,scePthreadMutexattrDestroy,smWEktiyyG0,func,runtime (NID),runtime_mutex.c
+eboot,libkernel,scePthreadMutexattrInit,F8bUHwAG284,func,runtime (NID),runtime_mutex.c
+eboot,libkernel,scePthreadMutexattrSetprotocol,1FGvU0i9saQ,func,runtime (NID),runtime_mutex.c
+eboot,libkernel,scePthreadMutexattrSettype,iMp8QpE+XO4,func,runtime (NID),runtime_mutex.c
+eboot,libkernel,scePthreadRename,GBUY7ywdULE,func,runtime (NID),runtime_thread.c
+eboot,libkernel,scePthreadSelf,aI+OeCz8xrQ,func,runtime (NID),runtime_thread.c
+eboot,libkernel,scePthreadSetaffinity,bt3CTBKmGyI,func,runtime (NID),runtime_thread.c
+eboot,libkernel,scePthreadSetprio,W0Hpm2X0uPE,func,runtime (NID),runtime_thread.c
+eboot,libkernel,scePthreadYield,T72hz6ffq08,func,runtime (NID),runtime_thread.c
+libSceFace.prx,libSceLibcInternal,Need_sceLibcInternal,ZT4ODD2Ts9o,,runtime,
+libSceFace.prx,libSceLibcInternal,_FLog,jjjRS7l1MPM,,módulo do jogo,
+libSceFace.prx,libSceLibcInternal,_FSin,ZtjspkJQ+vw,,módulo do jogo,
+libSceFace.prx,libSceLibcInternal,_ZdlPv,z+P+xCnWLBk,,módulo do jogo,
+libSceFace.prx,libSceLibcInternal,__cxa_finalize,H2e8t5ScQGc,,módulo do jogo,
+libSceFace.prx,libSceLibcInternal,__cxa_guard_acquire,3GPpjQdAMTw,,módulo do jogo,
+libSceFace.prx,libSceLibcInternal,__cxa_guard_release,9rAeANT2tyE,,módulo do jogo,
+libSceFace.prx,libSceLibcInternal,__cxa_pure_virtual,zr094EQ39Ww,,módulo do jogo,
+libSceFace.prx,libSceLibcInternal,atan2f,EH-x713A99c,,módulo do jogo,
+libSceFace.prx,libSceLibcInternal,expf,8zsu04XNsZ4,,módulo do jogo,
+libSceFace.prx,libSceLibcInternal,hypotf,iz2shAGFIxc,,módulo do jogo,
+libSceFace.prx,libSceLibcInternal,ldexp,JrwFIMzKNr0,,módulo do jogo,
+libSceFace.prx,libSceLibcInternal,memcpy,Q3VBxCXhUHs,,módulo do jogo,
+libSceFace.prx,libSceLibcInternal,memmove,+P6FRGH4LfA,,módulo do jogo,
+libSceFace.prx,libSceLibcInternal,memset,8zTFvBIAIN8,,módulo do jogo,
+libSceFace.prx,libSceLibcInternal,strcmp,Ovb2dSJOAuE,,módulo do jogo,
+libSceFace.prx,libkernel,__stack_chk_fail,Ou3iL1abvng,,runtime,
+libSceFace.prx,libkernel,__stack_chk_guard,f7uOxY9mM1U,,runtime,
+libSceFios2.prx,libSceDiscMap,sceDiscMapIsRequestOnHDD,lbQKqsERhtE,,runtime,
+libSceFios2.prx,libSceDiscMap,sceDiscMap_7C980FFB0AA27E7A,fJgP+wqifno,,runtime,
+libSceFios2.prx,libSceLibcInternal,Need_sceLibcInternal,ZT4ODD2Ts9o,,runtime,
+libSceFios2.prx,libSceLibcInternal,_Stdout,2sWzhYqFH4E,,módulo do jogo,
+libSceFios2.prx,libSceLibcInternal,__cxa_finalize,H2e8t5ScQGc,,módulo do jogo,
+libSceFios2.prx,libSceLibcInternal,fflush,MUjC4lbHrK4,,módulo do jogo,
+libSceFios2.prx,libSceLibcInternal,free,tIhsqj0qsFE,,módulo do jogo,
+libSceFios2.prx,libSceLibcInternal,gmtime,1mecP7RgI2A,,módulo do jogo,
+libSceFios2.prx,libSceLibcInternal,gmtime_s,5bBacGLyLOs,,módulo do jogo,
+libSceFios2.prx,libSceLibcInternal,localtime,efhK-YSUYYQ,,módulo do jogo,
+libSceFios2.prx,libSceLibcInternal,malloc,gQX+4GDQjpM,,módulo do jogo,
+libSceFios2.prx,libSceLibcInternal,memcpy,Q3VBxCXhUHs,,módulo do jogo,
+libSceFios2.prx,libSceLibcInternal,memset,8zTFvBIAIN8,,módulo do jogo,
+libSceFios2.prx,libSceLibcInternal,mktime,n7AepwR0s34,,módulo do jogo,
+libSceFios2.prx,libSceLibcInternal,printf,hcuQgD53UxM,,módulo do jogo,
+libSceFios2.prx,libSceLibcInternal,time,wLlFkwG9UcQ,,módulo do jogo,
+libSceFios2.prx,libSceLibcInternal,vprintf,GMpvxPFW924,,módulo do jogo,
+libSceFios2.prx,libSceLibcInternal,vsnprintf,Q2V+iqvjgC0,,módulo do jogo,
+libSceFios2.prx,libSceSysmodule,sceSysmoduleLoadModuleInternalWithArg,hHrGoGoNf+s,,faltando,
+libSceFios2.prx,libSceSysmodule,sceSysmoduleUnloadModule,eR2bZFAAU0Q,,runtime,
+libSceFios2.prx,libkernel,__error,9BcDykPmo1I,,runtime,
+libSceFios2.prx,libkernel,__stack_chk_fail,Ou3iL1abvng,,runtime,
+libSceFios2.prx,libkernel,__stack_chk_guard,f7uOxY9mM1U,,runtime,
+libSceFios2.prx,libkernel,__tls_get_addr,vNe1w4diLCs,,runtime,
+libSceFios2.prx,libkernel,sceKernelClockGettime,QBi7HCK03hw,,runtime,
+libSceFios2.prx,libkernel,sceKernelClose,UK2Tl2DWUns,,runtime,
+libSceFios2.prx,libkernel,sceKernelFstat,kBwCPsYX-m4,,runtime,
+libSceFios2.prx,libkernel,sceKernelFsync,fTx66l5iWIA,,runtime,
+libSceFios2.prx,libkernel,sceKernelFtruncate,VW3TVZiM4-E,,runtime,
+libSceFios2.prx,libkernel,sceKernelGetdirentries,taRWhTJFTgE,,runtime,
+libSceFios2.prx,libkernel,sceKernelGettimeofday,ejekcaNQNq0,,runtime,
+libSceFios2.prx,libkernel,sceKernelLseek,oib76F-12fk,,runtime,
+libSceFios2.prx,libkernel,sceKernelMkdir,1-LFLmRFxxM,,runtime,
+libSceFios2.prx,libkernel,sceKernelOpen,1G3lF1Gg1k8,,runtime,
+libSceFios2.prx,libkernel,sceKernelPread,+r3rMFwItV4,,runtime,
+libSceFios2.prx,libkernel,sceKernelPwrite,nKWi-N2HBV4,,runtime,
+libSceFios2.prx,libkernel,sceKernelRead,Cg4srZ6TKbU,,runtime,
+libSceFios2.prx,libkernel,sceKernelRename,52NcYU9+lEo,,runtime,
+libSceFios2.prx,libkernel,sceKernelRmdir,naInUjYt3so,,runtime,
+libSceFios2.prx,libkernel,sceKernelStat,eV9wAD2riIA,,runtime,
+libSceFios2.prx,libkernel,sceKernelTruncate,WlyEA-sLDf0,,runtime,
+libSceFios2.prx,libkernel,sceKernelUnlink,AUXVxWeJU-A,,runtime,
+libSceFios2.prx,libkernel,sceKernelUsleep,1jfXLRVzisc,,runtime,
+libSceFios2.prx,libkernel,sceKernelWrite,4wSze92BhLI,,runtime,
+libSceFios2.prx,libkernel,scePthreadAttrDestroy,62KCwEMmzcM,,runtime,
+libSceFios2.prx,libkernel,scePthreadAttrInit,nsYoNRywwNg,,runtime,
+libSceFios2.prx,libkernel,scePthreadAttrSetaffinity,3qxgM4ezETA,,runtime,
+libSceFios2.prx,libkernel,scePthreadAttrSetdetachstate,-Wreprtu0Qs,,runtime,
+libSceFios2.prx,libkernel,scePthreadAttrSetinheritsched,eXbUSpEaTsA,,runtime,
+libSceFios2.prx,libkernel,scePthreadAttrSetschedparam,DzES9hQF4f4,,runtime,
+libSceFios2.prx,libkernel,scePthreadAttrSetstacksize,UTXzJbWhhTE,,runtime,
+libSceFios2.prx,libkernel,scePthreadCondBroadcast,JGgj7Uvrl+A,,runtime,
+libSceFios2.prx,libkernel,scePthreadCondDestroy,g+PZd2hiacg,,runtime,
+libSceFios2.prx,libkernel,scePthreadCondInit,2Tb92quprl0,,runtime,
+libSceFios2.prx,libkernel,scePthreadCondSignal,kDh-NfxgMtE,,runtime,
+libSceFios2.prx,libkernel,scePthreadCondTimedwait,BmMjYxmew1w,,runtime,
+libSceFios2.prx,libkernel,scePthreadCondWait,WKAXJ4XBPQ4,,runtime,
+libSceFios2.prx,libkernel,scePthreadCreate,6UgtwV+0zb4,,runtime,
+libSceFios2.prx,libkernel,scePthreadEqual,3PtV6p3QNX4,,runtime,
+libSceFios2.prx,libkernel,scePthreadGetaffinity,rcrVFJsQWRY,,runtime,
+libSceFios2.prx,libkernel,scePthreadGetprio,1tKyG7RlMJo,,runtime,
+libSceFios2.prx,libkernel,scePthreadJoin,onNY9Byn-W8,,runtime,
+libSceFios2.prx,libkernel,scePthreadMutexDestroy,2Of0f+3mhhE,,runtime,
+libSceFios2.prx,libkernel,scePthreadMutexInit,cmo1RIYva9o,,runtime,
+libSceFios2.prx,libkernel,scePthreadMutexLock,9UK1vLZQft4,,runtime,
+libSceFios2.prx,libkernel,scePthreadMutexTrylock,upoVrzMHFeE,,runtime,
+libSceFios2.prx,libkernel,scePthreadMutexUnlock,tn3VlD0hG60,,runtime,
+libSceFios2.prx,libkernel,scePthreadMutexattrDestroy,smWEktiyyG0,,runtime,
+libSceFios2.prx,libkernel,scePthreadMutexattrInit,F8bUHwAG284,,runtime,
+libSceFios2.prx,libkernel,scePthreadMutexattrSetprotocol,1FGvU0i9saQ,,runtime,
+libSceFios2.prx,libkernel,scePthreadMutexattrSettype,iMp8QpE+XO4,,runtime,
+libSceFios2.prx,libkernel,scePthreadRwlockDestroy,BB+kb08Tl9A,,runtime,
+libSceFios2.prx,libkernel,scePthreadRwlockInit,6ULAa0fq4jA,,runtime,
+libSceFios2.prx,libkernel,scePthreadRwlockRdlock,Ox9i0c7L5w0,,runtime,
+libSceFios2.prx,libkernel,scePthreadRwlockTryrdlock,XD3mDeybCnk,,runtime,
+libSceFios2.prx,libkernel,scePthreadRwlockTrywrlock,bIHoZCTomsI,,runtime,
+libSceFios2.prx,libkernel,scePthreadRwlockUnlock,+L98PIbGttk,,runtime,
+libSceFios2.prx,libkernel,scePthreadRwlockWrlock,mqdNorrB+gI,,runtime,
+libSceFios2.prx,libkernel,scePthreadSelf,aI+OeCz8xrQ,,runtime,
+libSceFios2.prx,libkernel,scePthreadSetaffinity,bt3CTBKmGyI,,runtime,
+libSceFios2.prx,libkernel,scePthreadSetprio,W0Hpm2X0uPE,,runtime,
+libSceHand.prx,libSceLibcInternal,Need_sceLibcInternal,ZT4ODD2Ts9o,,runtime,
+libSceHand.prx,libSceLibcInternal,__cxa_finalize,H2e8t5ScQGc,,módulo do jogo,
+libSceHand.prx,libSceLibcInternal,memset,8zTFvBIAIN8,,módulo do jogo,
+libSceHand.prx,libkernel,__stack_chk_fail,Ou3iL1abvng,,runtime,
+libSceHand.prx,libkernel,__stack_chk_guard,f7uOxY9mM1U,,runtime,
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmAddEqEvent,b0xyllnVY-I,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmAreSubmitsAllowed,b08AgtPlHPg,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmBeginWorkload,ihxrbsoSKWc,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmComputeWaitOnAddress,ffrNQOshows,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmComputeWaitSemaphore,EJapNl2+pgU,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmCreateWorkloadStream,5udAm+6boVg,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDebugHardwareStatus,qpGITzPE+Zc,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDeleteEqEvent,PVT+fuoS9gU,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDestroyWorkloadStream,UtObDRQiGbs,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDingDong,bX5IbRvECXk,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDingDongForWorkload,byXlqupd8cE,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDisableMipStatsReport,HHo1BAljZO8,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDispatchDirect,0BzLGljcwBo,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDispatchIndirect,Z43vKp5k7r0,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDispatchIndirectOnMec,wED4ZXCFJT0,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDispatchInitDefaultHardwareState,nF6bFRUBRAU,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDrawIndex,HlTPoZ-oY7Y,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDrawIndexAuto,GGsn7jMTxw4,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDrawIndexIndirect,ED9-Fjr8Ta4,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDrawIndexIndirectCountMulti,thbPcG7E7qk,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDrawIndexMultiInstanced,jHdPvIzlpKc,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDrawIndexOffset,oYM+YzfCm2Y,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDrawIndirect,4v+otIIdjqg,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDrawIndirectCountMulti,cUCo8OvArrw,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDrawInitDefaultHardwareState350,yb2cRhagD1I,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDrawInitToDefaultContextState400,im2ZuItabu4,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDrawOpaqueAuto,stDSYW2SBVM,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDriverCaptureInProgress,TLV4mswiZ4A,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDriverTraceInProgress,R6z1xM3pW-w,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmDriverTriggerCapture,d88anrgNoKY,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmEndWorkload,Fa3x75OOLRA,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmFlushGarlic,iBt3Oe00Kvc,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmGetEqEventType,UoYY0DWMC0U,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmGetEqTimeStamp,H7-fgvEutM0,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmGetGpuBlockStatus,oL4hGI1PMpw,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmGetGpuInfoStatus,tZCSL5ulnB4,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmGetLastWaitedAddress,iFirFzgYsvw,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmGetNumTcaUnits,KnldROUkWJY,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmGetOffChipTessellationBufferSize,FFVZcCu3zWU,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmGetPhysicalCounterFromVirtualized,dewXw5roLs0,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmGetProtectionFaultTimeStamp,fzJdEihTFV4,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmGetShaderProgramBaseAddress,nEyFbYUloIM,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmGetShaderStatus,k7iGTvDQPLQ,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmGetTheTessellationFactorRingBufferBaseAddress,ln33zjBrfjk,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmInsertDingDongMarker,NfvOrNzy6sk,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmInsertPopMarker,7qZVNgEu+SY,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmInsertPushColorMarker,aPIZJTXC+cU,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmInsertPushMarker,W1Etj-jlW7Y,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmInsertSetColorMarker,aj3L-iaFmyk,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmInsertSetMarker,jiItzS6+22g,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmInsertThreadTraceMarker,URDgJcXhQOs,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmInsertWaitFlipDone,1qXLHIpROPE,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmIsUserPaEnabled,jg33rEKLfVs,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmLogicalCuIndexToPhysicalCuIndex,26PM5Mzl8zc,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmLogicalCuMaskToPhysicalCuMask,RU74kek-N0c,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmLogicalTcaUnitToPhysical,Kl0Z3LH07QI,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmMapComputeQueue,29oKvKXzEZo,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmMapComputeQueueWithPriority,A+uGq+3KFtQ,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmRequestFlipAndSubmitDone,gObODli-OH8,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmRequestFlipAndSubmitDoneForWorkload,6YRHhh5mHCs,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmRequestMipStatsReportAndReset,f85orjx7qts,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmResetVgtControl,MYRtYhojKdA,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmSetCsShaderWithModifier,Kx-h-nWQJ8A,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmSetEmbeddedPsShader,X9Omw9dwv5M,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmSetEmbeddedVsShader,+AFvOEXrKJk,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmSetEsShader,FUHG8sQ3R58,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmSetGsRingSizes,jtkqXpAOY6w,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmSetGsShader,UJwNuMBcUAk,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmSetHsShader,VJNjFtqiF5w,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmSetLsShader,vckdzbQ46SI,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmSetPsShader350,5uFKckiJYRM,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmSetVgtControl,cFCp0NX8wf0,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmSetVsShader,gAhCn6UiU4Y,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmSetWaveLimitMultipliers,XiyzNZ9J4nQ,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmSetupMipStatsReport,+xuDhxlWRPg,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmSubmitAndFlipCommandBuffers,xbxNatawohc,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmSubmitAndFlipCommandBuffersForWorkload,Ga6r7H6Y0RI,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmSubmitCommandBuffers,zwY0YV91TTI,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmSubmitCommandBuffersForWorkload,jRcI8VcgTz4,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmSubmitDone,yvZ73uQUqrk,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmUnmapComputeQueue,ArSg-TGinhk,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmUpdateGsShader,nLM2i2+65hA,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmUpdateHsShader,GNlx+y7xPdE,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmUpdatePsShader350,mLVL7N7BVBg,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmUpdateVsShader,V31V01UiScY,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmValidateDisableDiagnostics,SXw4dZEkgpA,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmValidateDisableDiagnostics2,BgM3t3LvcNk,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmValidateDispatchCommandBuffers,qGP74T5OWJc,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmValidateDrawCommandBuffers,hsZPf1lON7E,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmValidateGetDiagnosticInfo,RX7XCNSaL6I,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmValidateGetDiagnostics,5SHGNwLXBV4,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmValidateGetVersion,HzMN7ANqYEc,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmValidateOnSubmitEnabled,rTIV11nMQuM,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmValidateResetState,MBMa6EFu4Ko,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceGnmValidationRegisterMemoryCheckCallback,Q7t4VEYLafI,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceRazorCaptureImmediate,u9YKpRRHe-M,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceGnmDriver,sceRazorIsLoaded,f33OrruQYbM,,GPU (shadPS4),
+libSceS3DConversion.prx,libSceLibcInternal,Need_sceLibcInternal,ZT4ODD2Ts9o,,runtime,
+libSceS3DConversion.prx,libSceLibcInternal,_Sin,cCXjU72Z0Ow,,módulo do jogo,
+libSceS3DConversion.prx,libSceLibcInternal,_Stderr,H8AprKeZtNg,,módulo do jogo,
+libSceS3DConversion.prx,libSceLibcInternal,_ZdlPv,z+P+xCnWLBk,,módulo do jogo,
+libSceS3DConversion.prx,libSceLibcInternal,__cxa_finalize,H2e8t5ScQGc,,módulo do jogo,
+libSceS3DConversion.prx,libSceLibcInternal,__cxa_guard_acquire,3GPpjQdAMTw,,módulo do jogo,
+libSceS3DConversion.prx,libSceLibcInternal,__cxa_guard_release,9rAeANT2tyE,,módulo do jogo,
+libSceS3DConversion.prx,libSceLibcInternal,atan,OXmauLdQ8kY,,módulo do jogo,
+libSceS3DConversion.prx,libSceLibcInternal,fwrite,MpxhMh8QFro,,módulo do jogo,
+libSceS3DConversion.prx,libSceLibcInternal,memcmp,DfivPArhucg,,módulo do jogo,
+libSceS3DConversion.prx,libSceLibcInternal,memcpy,Q3VBxCXhUHs,,módulo do jogo,
+libSceS3DConversion.prx,libSceLibcInternal,memcpy_s,NFLs+dRJGNg,,módulo do jogo,
+libSceS3DConversion.prx,libSceLibcInternal,memset,8zTFvBIAIN8,,módulo do jogo,
+libSceS3DConversion.prx,libSceLibcInternal,printf,hcuQgD53UxM,,módulo do jogo,
+libSceS3DConversion.prx,libSceLibcInternal,qsort,AEJdIVZTEmo,,módulo do jogo,
+libSceS3DConversion.prx,libSceLibcInternal,strlen,j4ViWNHEgww,,módulo do jogo,
+libSceS3DConversion.prx,libSceLibcInternal,tan,T7uyNqP7vQA,,módulo do jogo,
+libSceS3DConversion.prx,libSceLibcInternal,vsnprintf,Q2V+iqvjgC0,,módulo do jogo,
+libSceS3DConversion.prx,libkernel,__stack_chk_fail,Ou3iL1abvng,,runtime,
+libSceS3DConversion.prx,libkernel,__stack_chk_guard,f7uOxY9mM1U,,runtime,
+libSceS3DConversion.prx,libkernel,sceKernelIsNeoMode,WslcK1FQcGI,,runtime,
+libSceS3DConversion.prx,libkernel,scePthreadYield,T72hz6ffq08,,runtime,
+libSceSmart.prx,libSceLibcInternal,Need_sceLibcInternal,ZT4ODD2Ts9o,,runtime,
+libSceSmart.prx,libSceLibcInternal,_FDtest,mnufPlYbnN0,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,_FExp,-3pU5y1utmI,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,_FInf,QWCTbYI14dA,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,_FLog,jjjRS7l1MPM,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,_FNan,VVgqI3B2bfk,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,_FSin,ZtjspkJQ+vw,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,_Log,zXCi78bYrEI,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,_Stderr,H8AprKeZtNg,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,_Stdout,2sWzhYqFH4E,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,_ZSt11_Xbad_allocv,eT2UsmTewbU,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,_ZSt14_Xlength_errorPKc,tQIo+GIPklo,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,_ZdaPv,MLWl90SFWNE,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,_ZdlPv,z+P+xCnWLBk,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,_Znam,hdm0YfMa7TQ,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,_Znwm,fJnpuVVBbKk,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,__cxa_finalize,H2e8t5ScQGc,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,__isfinitef,Q8pvJimUWis,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,__isinff,rDMyAf1Jhug,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,__isnan,GfxAp9Xyiqs,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,__isnanf,lA94ZgT+vMM,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,abort,L1SBTkC+Cvw,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,acosf,QI-x0SL8jhw,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,atan2f,EH-x713A99c,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,expf,8zsu04XNsZ4,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,fflush,MUjC4lbHrK4,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,fprintf,fffwELXNVFA,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,free,tIhsqj0qsFE,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,hypotf,iz2shAGFIxc,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,ldexpf,kn0yiYeExgA,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,log,rtV7-jWC6Yg,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,logbf,RWqyr1OKuw4,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,malloc,gQX+4GDQjpM,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,memcpy,Q3VBxCXhUHs,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,memmove,+P6FRGH4LfA,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,memset,8zTFvBIAIN8,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,pow,9LCjpWyQ5Zc,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,powf,1D0H2KNjshE,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,printf,hcuQgD53UxM,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,putchar,m5wN+SwZOR4,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,puts,YQ0navp+YIc,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,qsort,AEJdIVZTEmo,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,rand,cpCOXWMgha0,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,roundf,DDHG1a6+3q0,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,scalbnf,9fs1btfLoUs,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,srand,VPbJwTCgME0,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,strlen,j4ViWNHEgww,,módulo do jogo,
+libSceSmart.prx,libSceLibcInternal,tanf,ZE6RNL+eLbk,,módulo do jogo,
+libSceSmart.prx,libkernel,__stack_chk_fail,Ou3iL1abvng,,runtime,
+libSceSmart.prx,libkernel,__stack_chk_guard,f7uOxY9mM1U,,runtime,
+libSceSmart.prx,libkernel,sceKernelReadTsc,-2IRUCO--PM,,runtime,
+libSceSmart.prx,libkernel,scePthreadMutexDestroy,2Of0f+3mhhE,,runtime,
+libSceSmart.prx,libkernel,scePthreadMutexInit,cmo1RIYva9o,,runtime,
+libSceSmart.prx,libkernel,scePthreadMutexLock,9UK1vLZQft4,,runtime,
+libSceSmart.prx,libkernel,scePthreadMutexUnlock,tn3VlD0hG60,,runtime,
+libc.prx,libSceFios2,sceFiosDeallocatePassthruFH,+mfO27a-bEY,,módulo do jogo,
+libc.prx,libSceFios2,sceFiosDeleteSync,KsVTc04kN9k,,módulo do jogo,
+libc.prx,libSceFios2,sceFiosFHCloseSync,AOujSGqU+ms,,módulo do jogo,
+libc.prx,libSceFios2,sceFiosFHOpenWithModeSync,w13Ojm7ON9o,,módulo do jogo,
+libc.prx,libSceFios2,sceFiosFHReadSync,Bn2ZF4ZjeuQ,,módulo do jogo,
+libc.prx,libSceFios2,sceFiosFHSeek,xReSebwKApA,,módulo do jogo,
+libc.prx,libSceFios2,sceFiosFHToFileno,8dzXU5GxsjI,,módulo do jogo,
+libc.prx,libSceFios2,sceFiosFHWriteSync,Kl-TbrDU9YM,,módulo do jogo,
+libc.prx,libSceFios2,sceFiosFilenoToFH,oRgsgfJY3Mc,,módulo do jogo,
+libc.prx,libSceFios2,sceFiosIsValidHandle,8IGjwtnvYwI,,módulo do jogo,
+libc.prx,libSceFios2,sceFiosRenameSync,G-39lsdSgXo,,módulo do jogo,
+libc.prx,libSceLibcInternalExt,sceLibcHeapGetTraceInfo,NWtTN10cJzE,,runtime,
+libc.prx,libkernel,__elf_phdr_match_addr,Fjc4-n1+y2g,,runtime,
+libc.prx,libkernel,__error,9BcDykPmo1I,,runtime,
+libc.prx,libkernel,__progname,djxxOmW6-aw,,runtime,
+libc.prx,libkernel,__pthread_cxa_finalize,kbw4UHHSYy0,,runtime,
+libc.prx,libkernel,__stack_chk_fail,Ou3iL1abvng,,runtime,
+libc.prx,libkernel,__stack_chk_guard,f7uOxY9mM1U,,runtime,
+libc.prx,libkernel,__tls_get_addr,vNe1w4diLCs,,runtime,
+libc.prx,libkernel,_exit,6Z83sYWFlA8,,runtime,
+libc.prx,libkernel,_is_signal_return,crb5j7mkk1c,,runtime,
+libc.prx,libkernel,_nanosleep,NhpspxdjEKU,,faltando,
+libc.prx,libkernel,_read,DRuBt2pvICk,,runtime,
+libc.prx,libkernel,_sceKernelRtldSetApplicationHeapAPI,p5EcQeEeJAE,,runtime,
+libc.prx,libkernel,_sigprocmask,6xVpy0Fdq+I,,runtime,
+libc.prx,libkernel,_write,FxVZqBAA7ks,,runtime,
+libc.prx,libkernel,clock_gettime,lLMT9vJAck0,,runtime,
+libc.prx,libkernel,getpagesize,k+AXqu2-eBc,,runtime,
+libc.prx,libkernel,getrusage,hHlZQUnlxSM,,runtime,
+libc.prx,libkernel,gettimeofday,n88vx3C5nW8,,runtime,
+libc.prx,libkernel,mmap,BPE9s9vQQXo,,runtime,
+libc.prx,libkernel,msync,tZY4+SZNFhA,,runtime,
+libc.prx,libkernel,nanosleep,yS8U2TGCe1A,,runtime,
+libc.prx,libkernel,sceKernelConvertLocaltimeToUtc,0NTHN1NKONI,,runtime,
+libc.prx,libkernel,sceKernelConvertUtcToLocaltime,-o5uEDpN+oY,,runtime,
+libc.prx,libkernel,sceKernelDebugRaiseException,OMDRKKAZ8I4,,runtime,
+libc.prx,libkernel,sceKernelDebugRaiseExceptionOnReleaseMode,zE-wXIZjLoM,,runtime,
+libc.prx,libkernel,sceKernelGetModuleInfoForUnwind,RpQJJVKTiFM,,runtime,
+libc.prx,libkernel,sceKernelGetModuleInfoFromAddr,f7KBOafysXo,,runtime,
+libc.prx,libkernel,sceKernelGetProcParam,959qrazPIrg,,runtime,
+libc.prx,libkernel,sceKernelGetProcessTime,4J2sUJmuHZQ,,runtime,
+libc.prx,libkernel,sceKernelInternalMemoryGetModuleSegmentInfo,-YTW+qXc3CQ,,runtime,
+libc.prx,libkernel,sceKernelIsAddressSanitizerEnabled,jh+8XiK4LeE,,faltando,
+libc.prx,libkernel,sceKernelLseek,oib76F-12fk,,runtime,
+libc.prx,libkernel,sceKernelMapNamedFlexibleMemory,mL8NDH86iQI,,runtime,
+libc.prx,libkernel,sceKernelMlock,3k6kx-zOOSQ,,runtime,
+libc.prx,libkernel,sceKernelMunmap,cQke9UuBQOk,,runtime,
+libc.prx,libkernel,sceKernelPrintBacktraceWithModuleInfo,Wl2o5hOVZdw,,runtime,
+libc.prx,libkernel,scePthreadAttrDestroy,62KCwEMmzcM,,runtime,
+libc.prx,libkernel,scePthreadAttrGet,x1X76arYMxU,,runtime,
+libc.prx,libkernel,scePthreadAttrGetaffinity,8+s5BzZjxSg,,runtime,
+libc.prx,libkernel,scePthreadAttrGetdetachstate,JaRMy+QcpeU,,runtime,
+libc.prx,libkernel,scePthreadAttrInit,nsYoNRywwNg,,runtime,
+libc.prx,libkernel,scePthreadAttrSetstacksize,UTXzJbWhhTE,,runtime,
+libc.prx,libkernel,scePthreadCondBroadcast,JGgj7Uvrl+A,,runtime,
+libc.prx,libkernel,scePthreadCondDestroy,g+PZd2hiacg,,runtime,
+libc.prx,libkernel,scePthreadCondInit,2Tb92quprl0,,runtime,
+libc.prx,libkernel,scePthreadCondSignal,kDh-NfxgMtE,,runtime,
+libc.prx,libkernel,scePthreadCondTimedwait,BmMjYxmew1w,,runtime,
+libc.prx,libkernel,scePthreadCondWait,WKAXJ4XBPQ4,,runtime,
+libc.prx,libkernel,scePthreadCreate,6UgtwV+0zb4,,runtime,
+libc.prx,libkernel,scePthreadDetach,4qGrR6eoP9Y,,runtime,
+libc.prx,libkernel,scePthreadEqual,3PtV6p3QNX4,,runtime,
+libc.prx,libkernel,scePthreadExit,3kg7rT0NQIs,,runtime,
+libc.prx,libkernel,scePthreadGetspecific,eoht7mQOCmo,,runtime,
+libc.prx,libkernel,scePthreadJoin,onNY9Byn-W8,,runtime,
+libc.prx,libkernel,scePthreadKeyCreate,geDaqgH9lTg,,runtime,
+libc.prx,libkernel,scePthreadKeyDelete,PrdHuuDekhY,,runtime,
+libc.prx,libkernel,scePthreadMutexDestroy,2Of0f+3mhhE,,runtime,
+libc.prx,libkernel,scePthreadMutexInit,cmo1RIYva9o,,runtime,
+libc.prx,libkernel,scePthreadMutexLock,9UK1vLZQft4,,runtime,
+libc.prx,libkernel,scePthreadMutexTrylock,upoVrzMHFeE,,runtime,
+libc.prx,libkernel,scePthreadMutexUnlock,tn3VlD0hG60,,runtime,
+libc.prx,libkernel,scePthreadMutexattrDestroy,smWEktiyyG0,,runtime,
+libc.prx,libkernel,scePthreadMutexattrInit,F8bUHwAG284,,runtime,
+libc.prx,libkernel,scePthreadMutexattrSettype,iMp8QpE+XO4,,runtime,
+libc.prx,libkernel,scePthreadOnce,14bOACANTBo,,runtime,
+libc.prx,libkernel,scePthreadSelf,aI+OeCz8xrQ,,runtime,
+libc.prx,libkernel,scePthreadSetspecific,+BzXYkqYeLE,,runtime,
+libc.prx,libkernel,scePthreadYield,T72hz6ffq08,,runtime,
+libc.prx,libkernel,sched_yield,6XG4B33N09g,,runtime,
+libc.prx,libkernel,sigfillset,VkTAsrZDcJ0,,runtime,
+libc.prx,libkernel,signal,VADc3MNQ3cM,,runtime,
+libc.prx,libkernel,sigprocmask,aPcyptbOiZs,,runtime,
+libc.prx,libkernel,sigreturn,mo0bFmWppIw,,runtime,

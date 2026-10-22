@@ -49,7 +49,8 @@ if [[ $game != "$(realpath "$original_game")" ]]; then
     trap '"$PYTHON" -c '\''import shutil,sys; shutil.rmtree(sys.argv[1])'\'' "$mod_game"' EXIT
 fi
 "$PYTHON" scripts/prepare.py "$game" --out "$out"
-"$PYTHON" scripts/link_libc.py "$game" --out "$out"
+# TLG_SKIP_LINK_LIBC=1: games whose libc.prx link_modules.py links (Lost Paradise: link_libc.py cannot read it).
+if [[ ${TLG_SKIP_LINK_LIBC:-} != 1 ]]; then "$PYTHON" scripts/link_libc.py "$game" --out "$out"; fi
 "$PYTHON" scripts/link_modules.py "$game" --out "$out"
 "$PYTHON" scripts/content_profile.py "$game" --out "$out" --sku "${TLG_CONTENT_SKU:-full}"
 # TLG_PATCHES adds patch names ("a;b") to the game's built-in patch file.
