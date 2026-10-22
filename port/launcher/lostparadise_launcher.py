@@ -214,7 +214,8 @@ def main_window():
     settings = load_settings()
     root = tk.Tk(className='lostparadise-pc')
     root.title(TITLE)
-    root.geometry('720x600')
+    root.geometry('760x720')
+    root.minsize(640, 540)
     try:
         ttk.Style().theme_use('clam')
     except tk.TclError:
@@ -336,7 +337,7 @@ def main_window():
         clear_shader_cache, lambda n: f'Shader cache cleared ({n} folder(s)).')).pack(anchor='w', pady=2)
 
     # --- Log + play
-    log_box = tk.Text(frame, height=8, state='disabled', wrap='word')
+    log_box = tk.Text(frame, height=6, state='disabled', wrap='word')
     log_box.pack(fill='x')
 
     def log(text):
@@ -394,6 +395,12 @@ def main_window():
     play_button = ttk.Button(bottom, text='▶  Play', command=start)
     play_button.pack(side='right')
     ttk.Button(bottom, text='Open log', command=lambda: open_folder(data_dir(settings))).pack(side='right', padx=6)
+    # Packing order: the Play bar and the log first (bottom), so a tall tab never pushes them out.
+    for widget in (bottom, log_box, notebook):
+        widget.pack_forget()
+    bottom.pack(side='bottom', fill='x', pady=6)
+    log_box.pack(side='bottom', fill='x')
+    notebook.pack(side='top', fill='both', expand=True, pady=8)
     root.mainloop()
 
 
