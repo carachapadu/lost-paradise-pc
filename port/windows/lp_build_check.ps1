@@ -32,7 +32,10 @@ New-Item -ItemType Directory -Force -Path $Game | Out-Null
 Copy-Item "$Dump\eboot.elf" "$Game\eboot.bin" -Force
 Copy-Item "$Dump\sce_module" "$Game\sce_module" -Recurse -Force
 New-Item -ItemType Directory -Force -Path "$Game\sce_sys" | Out-Null
-Copy-Item "$Dump\sce_sys\param.sfo" "$Game\sce_sys\param.sfo" -Force
+Copy-Item "$Dump\sce_sys\*" "$Game\sce_sys" -Recurse -Force
+foreach ($f in 'sce_discmap.plt', 'sce_discmap_patch.plt', 'playgo.pgm') { if (Test-Path "$Dump\$f") { Copy-Item "$Dump\$f" "$Game\$f" -Force } }
+# data\ is large: a junction (no copy) so --app0 sees the game's files
+if ((Test-Path "$Dump\data") -and -not (Test-Path "$Game\data")) { New-Item -ItemType Junction -Path "$Game\data" -Target "$Dump\data" | Out-Null }
 
 function Msys-Path($p) { $p = $p -replace '\\', '/'; if ($p -match '^([A-Za-z]):(.*)$') { return '/' + $Matches[1].ToLower() + $Matches[2] }; return $p }
 $repoM = Msys-Path $Repo; $gameM = Msys-Path $Game; $workM = Msys-Path $Work; $logM = Msys-Path $Log
@@ -58,7 +61,20 @@ OUT='$workM/out'; mkdir -p "`$OUT"
 python scripts/prepare.py '$gameM' --out "`$OUT"
 python scripts/link_modules.py '$gameM' --out "`$OUT"
 echo '== check-imports'
+echo '-- sem GPU (--cpu-only): os imports da GPU aparecem como faltando, e esperado'
 ./out/tlg-probe.exe "`$OUT/boot-linked.bin" --check-imports --cpu-only || true
+echo '-- com GPU registrada'
+./out/tlg-probe.exe "`$OUT/boot-linked.bin" --check-imports || true
+echo '== content/patches'
+python scripts/content_profile.py '$gameM' --out "`$OUT" --sku full
+python scripts/patches.py --out "`$OUT" --extra '' --game-dir '$gameM' --patches-dir '$workM/patches' --patches-config '$workM/patches.json'
+mkdir -p '$workM/user'
+ISA=''
+if python scripts/isa_rewrite.py "`$OUT/boot-linked.bin" --out "`$OUT" --red-zone; then ISA="--isa-rewrite `$OUT/isa-rewrite.bin"; fi
+echo '== primeiro boot, so CPU (40 s)'
+./out/tlg-probe.exe "`$OUT/boot-linked.bin" --cpu-only --content-profile "`$OUT/content.bin" --patches "`$OUT/patches.bin" --app0 '$gameM' --user '$workM/user' --timeout 40 `$ISA 2>&1 | tail -n 300 || true
+echo '== primeiro boot, com GPU (40 s; abre uma janela)'
+./out/tlg-probe.exe "`$OUT/boot-linked.bin" --content-profile "`$OUT/content.bin" --patches "`$OUT/patches.bin" --app0 '$gameM' --user '$workM/user' --timeout 40 `$ISA 2>&1 | tail -n 300 || true
 echo '== fim'
 "@
 $tmp = Join-Path $env:TEMP 'lp_build_check.sh'
